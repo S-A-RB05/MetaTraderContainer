@@ -1,0 +1,33 @@
+# Use an Ubuntu 20.04 base image
+FROM ubuntu:20.04
+
+# Update package lists and install dependencies
+RUN apt-get update && \
+    apt-get install -y software-properties-common && \
+    dpkg --add-architecture i386 && \
+    apt-get update && \
+    apt-get install -y wine winetricks xvfb x11vnc && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Install MetaTrader 5
+COPY /MetaTrader /app
+
+# Set up VNC
+ENV VNC_PASSWORD=password
+RUN mkdir ~/.vnc && \
+    x11vnc -storepasswd $VNC_PASSWORD ~/.vnc/passwd && \
+    echo "x11vnc -forever -usepw -create" >> ~/.bashrc
+
+# Expose VNC and MetaTrader 5 ports
+EXPOSE 5900
+EXPOSE 8222
+
+# Start Xvfb and MetaTrader 5 with wine and x11vnc
+CMD Xvfb :0 -screen 0 1024x768x16 && \
+    wine terminal64.exe /portable && \
+    x11vnc -display :0 -rfbauth ~/.vnc/passwd -forever -shared -bg -rfbport 5900 && \
+    bash
