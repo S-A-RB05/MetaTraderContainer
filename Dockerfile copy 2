@@ -17,7 +17,7 @@ WORKDIR /app
 COPY /MetaTrader /app
 
 # Set up VNC
-ENV VNC_PASSWORD=password
+ENV VNC_PASSWORD=passwod
 RUN mkdir ~/.vnc && \
     x11vnc -storepasswd $VNC_PASSWORD ~/.vnc/passwd && \
     echo "x11vnc -forever -usepw -create" >> ~/.bashrc
