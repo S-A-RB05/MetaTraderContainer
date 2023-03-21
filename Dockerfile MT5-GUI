@@ -1,0 +1,19 @@
+# Use the base image from Ubuntu
+FROM ubuntu:latest
+
+# Set the working directory to /app
+WORKDIR /MetaTrader
+
+# Tells docker that during installations it is not possible for the GUI to interact
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Set environment variable display to the host machine
+ENV DISPLAY=host.docker.internal:0.0
+
+# Install Wine, wget and MetaTrader 5 setup
+RUN dpkg --add-architecture i386 \
+    && apt-get update \
+    && apt-get install -y wine32 winbind wget
+
+# Copies the install directory from MetaTrader 5 to the docker instead of installing it
+COPY ["MetaTrader_5_32bit/MetaTrader5", "./"]
