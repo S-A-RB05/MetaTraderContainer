@@ -9,3 +9,6 @@ To run MetaTrader 5: ```wine terminal.exe```
 To build docker file: ```docker build -t ubuntu-mt5-no-gui "USE DOCKER FILE MT5-NO-GUI"```  
 To run docker file: ```docker run -it -v "ABSOLUTE WINDOWS PATH TO REPORT DIRECTORY":/MetaTrader/Report ubuntu-mt5-no-gui``` 
 To run MetaTrader 5: ```xvfb-run wine terminal.exe```
+
+
+test
