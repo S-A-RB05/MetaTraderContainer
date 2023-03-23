@@ -1,18 +1,33 @@
-name: Build & push to dockerhub
+name: Build and Push Docker Images
+
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
+
+env:
+  DOCKER_USERNAME: "stockbrood"
+  DOCKER_PASSWORD: "Stockbrood"
 
 jobs:
-  build-and-push-image:
+  build-and-push:
     runs-on: ubuntu-latest
-      matrix:
-        include:
-          - dockerfile: ./Dockerfile-gui
-            image: stockbrood/mt5_gui
-          - dockerfile: ./Dockerfile-nogui
-            image: stockbrood/mt5_nogui
-
     steps:
-
-
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Build and Push Image 1
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: stockbrood/mt5_gui:latest
+          dockerfile: ./Dockerfile-gui
+      
+      - name: Build and Push Image 2
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: stockbrood/mt5_nogui:latest
+          dockerfile: ./Dockerfile-nogui
