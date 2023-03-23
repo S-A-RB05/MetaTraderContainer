@@ -16,4 +16,4 @@ RUN dpkg --add-architecture i386 \
     && apt-get install -y wine32 winbind wget
 
 # Copies the install directory from MetaTrader 5 to the docker instead of installing it
-COPY ["MetaTrader_5_32bit/MetaTrader5", "./"]
+COPY ["../MetaTrader_5_32bit/MetaTrader5", "./"]
