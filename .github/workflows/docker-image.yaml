@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file /GUI/Dockerfile --tag mt5-gui:$(date +%s)
+      run: docker build . --file ../../GUI/Dockerfile --tag mt5-gui:$(date +%s)
     
     - name: Publish to Docker Hub
       uses: docker/build-push-action@v1
