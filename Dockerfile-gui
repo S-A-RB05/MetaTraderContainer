@@ -17,3 +17,7 @@ RUN dpkg --add-architecture i386 \
 
 # Copies the install directory from MetaTrader 5 to the docker instead of installing it
 COPY ["MetaTrader_5_32bit/MetaTrader5", "./"]
+
+# Autorun MetaTrader Terminal.
+ENTRYPOINT [ "wine" ]
+CMD [ "terminal.exe" ]
