@@ -17,3 +17,7 @@ ENV DISPLAY=:99
 RUN Xvfb :99 -screen 0 1024x768x16 &
 
 COPY ["MetaTrader_5_32bit/MetaTrader5", "./"]
+
+# Autorun MetaTrader Terminal.
+ENTRYPOINT [ "xvfb-run", "wine" ]
+CMD [ "terminal.exe" ]
