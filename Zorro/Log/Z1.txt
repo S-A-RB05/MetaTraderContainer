@@ -1,0 +1,14 @@
+WFA Test Z1 EUR/USD (TICKS), Zorro 2.539
+
+Simulated account   AssetsFix 
+Bar period          4 hours (avg 338 min)
+Total processed     25862 bars, 17855452 ticks
+Simulation period   2011-04-28..2022-10-22 (17852 bars)
+Test period         2014-10-07..2022-10-22 (12496 bars)
+Lookback period     500 bars (23 weeks)
+WFO test cycles     21 x 595 bars (27 weeks)
+Training cycles     22 x 5356 bars (251 weeks)
+Simulation mode     Realistic ticks 
+Avg bar             243 ticks  90.2 pips range
+Spread              1.5 pips (roll -0.10/-0.11)
+Lot size            1000.00

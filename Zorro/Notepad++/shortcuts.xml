@@ -1,0 +1,30 @@
+<NotepadPlus>
+    <InternalCommands>
+        <Shortcut id="49000" Ctrl="yes" Alt="no" Shift="yes" Key="116" />
+        <Shortcut id="47000" Ctrl="yes" Alt="no" Shift="no" Key="112" />
+    </InternalCommands>
+    <Macros>
+        <Macro name="Trim Trailing Space and Save" Ctrl="no" Alt="yes" Shift="yes" Key="83">
+            <Action type="2" message="0" wParam="42024" lParam="0" sParam="" />
+            <Action type="2" message="0" wParam="41006" lParam="0" sParam="" />
+        </Macro>
+    </Macros>
+    <UserDefinedCommands>
+        <Command name="Run Script with Zorro64" Ctrl="no" Alt="no" Shift="yes" Key="116">..\Zorro64\Zorro64 $(NAME_PART) -stay</Command>
+        <Command name="Run Script with Zorro" Ctrl="no" Alt="no" Shift="no" Key="116">..\Zorro $(NAME_PART) -stay</Command>
+        <Command name="Open Zorro Help" Ctrl="no" Alt="no" Shift="yes" Key="112">..\Zorro.chm</Command>
+        <Command name="Wikipedia Search" Ctrl="no" Alt="yes" Shift="no" Key="114">https://en.wikipedia.org/wiki/Special:Search?search=$(CURRENT_WORD)</Command>
+        <Command name="Open File in Another Instance" Ctrl="no" Alt="yes" Shift="no" Key="117">$(NPP_FULL_FILE_PATH) $(CURRENT_WORD) -nosession -multiInst</Command>
+    </UserDefinedCommands>
+    <PluginCommands>
+        <PluginCommand moduleName="VisualStudioLineCopy.Unicode.dll" internalID="0" Ctrl="yes" Alt="no" Shift="no" Key="67" />
+        <PluginCommand moduleName="VisualStudioLineCopy.Unicode.dll" internalID="1" Ctrl="yes" Alt="no" Shift="no" Key="88" />
+        <PluginCommand moduleName="LanguageHelp.dll" internalID="0" Ctrl="no" Alt="no" Shift="no" Key="112" />
+    </PluginCommands>
+    <ScintillaKeys>
+        <ScintKey ScintID="2177" menuCmdID="42001" Ctrl="no" Alt="no" Shift="yes" Key="46" />
+        <ScintKey ScintID="2178" menuCmdID="42002" Ctrl="yes" Alt="no" Shift="no" Key="45" />
+        <ScintKey ScintID="2337" menuCmdID="0" Ctrl="yes" Alt="yes" Shift="yes" Key="76" />
+        <ScintKey ScintID="2338" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="76" />
+    </ScintillaKeys>
+</NotepadPlus>

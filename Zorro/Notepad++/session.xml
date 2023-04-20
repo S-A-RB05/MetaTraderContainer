@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="2">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="440" startPos="578" endPos="578" selMode="0" offset="0" wrapCount="1" lang="None (Normal Text)" encoding="-1" userReadOnly="no" filename="D:\Zorro\Log\Z1.txt" backupFilePath="" originalFileLastModifTimestamp="-997026849" originalFileLastModifTimestampHigh="31023440" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="354" startPos="0" endPos="0" selMode="0" offset="0" wrapCount="1" lang="C" encoding="-1" userReadOnly="no" filename="D:\Zorro\Strategy\_New.c" backupFilePath="" originalFileLastModifTimestamp="1158137425" originalFileLastModifTimestampHigh="31023448" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="7864439" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="562" startPos="0" endPos="0" selMode="0" offset="0" wrapCount="1" lang="C" encoding="-1" userReadOnly="no" filename="D:\Zorro\Strategy\TradeTest.c" backupFilePath="" originalFileLastModifTimestamp="-30970112" originalFileLastModifTimestampHigh="30994496" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="18546828" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

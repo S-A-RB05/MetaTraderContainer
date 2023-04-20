@@ -1,0 +1,660 @@
+Setup Log of: Zorro Project
+Version: 2.5.3.9
+
+Date: 14-MAR-2023 10:32:01
+Operating System: Win8.64  6.2  9200 - x64 Workstation
+Composer Version: 11.0.0.2
+
+WinTempDir: C:\Users\jovis\AppData\Local\Temp
+SourceDir:  C:\Users\jovis\AppData\Local\Temp\SETUP_21429
+
+Execute at: (1) --- Setup Start
+Execute at: (22) --- Before Dialogs
+Show Setup Dialog: Welcome
+Show Setup Dialog: License Agreement
+Show Setup Dialog: Readme
+Execute at: (7) --- Before User Information
+Show Setup Dialog: User Information
+Execute at: (8) --- After User Information
+Execute at: (13) --- Before Destination
+Show Setup Dialog: Choose Destination Location
+Execute at: (14) --- After Destination
+Execute at: (15) --- Before Associate
+Show Setup Dialog: Set File Association
+Execute at: (16) --- After Associate
+Execute at: (17) --- Before Shortcuts
+Show Setup Dialog: Set Program Shortcuts
+Execute at: (18) --- After Shortcuts
+Show Setup Dialog: Confirm Setup Settings
+Create Target Directory: D:\Zorro ... TRUE
+Show Setup Dialog: Copying Files
+Execute at: (2) --- Before Copy
+Handle First UnInstall Data
+  Copy File: D:\Zorro\Zorro_setup_16862.exe ... OK
+
+Start Copy Directory
+  (D:\Zorro)
+  Copy File: D:\Zorro\api.def ... OK
+  Copy File: D:\Zorro\FXCM.zip ... OK
+  Copy File: D:\Zorro\zorro.chm ... OK
+  Copy File: D:\Zorro\Zorro.exe ... OK
+  Copy File: D:\Zorro\Zorro.ini ... OK
+  Copy File: D:\Zorro\ZorroControl.exe ... OK
+  Copy File: D:\Zorro\ZorroMT4.zip ... OK
+  Copy File: D:\Zorro\ZorroMT5.zip ... OK
+  Copy File: D:\Zorro\Zview.exe ... OK
+  Copy File: D:\Zorro\ackutl.dll ... OK
+  Copy File: D:\Zorro\chartdir70.dll ... OK
+  Copy File: D:\Zorro\concrt140.dll ... OK
+  Copy File: D:\Zorro\libeay32.dll ... OK
+  Copy File: D:\Zorro\litec32.dll ... OK
+  Copy File: D:\Zorro\mfc140.dll ... OK
+  Copy File: D:\Zorro\msvcp140.dll ... OK
+  Copy File: D:\Zorro\msvcr120.dll ... OK
+  Copy File: D:\Zorro\mt4R.dll ... OK
+  Copy File: D:\Zorro\ssleay32.dll ... OK
+  Copy File: D:\Zorro\ucrtbase.dll ... OK
+  Copy File: D:\Zorro\vccorlib140.dll ... OK
+  Copy File: D:\Zorro\vcruntime140.dll ... OK
+  Copy File: D:\Zorro\ZorroControl.dll ... OK
+  Copy File: D:\Zorro\click.wav ... OK
+  Copy File: D:\Zorro\loss.wav ... OK
+  Copy File: D:\Zorro\optimize.wav ... OK
+  Copy File: D:\Zorro\trade.wav ... OK
+  Copy File: D:\Zorro\trail.wav ... OK
+  Copy File: D:\Zorro\win.wav ... OK
+
+Start Copy Directory
+  (D:\Zorro\Data)
+  Copy File: D:\Zorro\Data\Z12.fac ... OK
+  Copy File: D:\Zorro\Data\Z12.par ... OK
+  Copy File: D:\Zorro\Data\Z12_1.par ... OK
+  Copy File: D:\Zorro\Data\Z12_10.par ... OK
+  Copy File: D:\Zorro\Data\Z12_11.par ... OK
+  Copy File: D:\Zorro\Data\Z12_12.par ... OK
+  Copy File: D:\Zorro\Data\Z12_13.par ... OK
+  Copy File: D:\Zorro\Data\Z12_14.par ... OK
+  Copy File: D:\Zorro\Data\Z12_15.par ... OK
+  Copy File: D:\Zorro\Data\Z12_16.par ... OK
+  Copy File: D:\Zorro\Data\Z12_17.par ... OK
+  Copy File: D:\Zorro\Data\Z12_18.par ... OK
+  Copy File: D:\Zorro\Data\Z12_19.par ... OK
+  Copy File: D:\Zorro\Data\Z12_2.par ... OK
+  Copy File: D:\Zorro\Data\Z12_20.par ... OK
+  Copy File: D:\Zorro\Data\Z12_21.par ... OK
+  Copy File: D:\Zorro\Data\Z12_3.par ... OK
+  Copy File: D:\Zorro\Data\Z12_4.par ... OK
+  Copy File: D:\Zorro\Data\Z12_5.par ... OK
+  Copy File: D:\Zorro\Data\Z12_6.par ... OK
+  Copy File: D:\Zorro\Data\Z12_7.par ... OK
+  Copy File: D:\Zorro\Data\Z12_8.par ... OK
+  Copy File: D:\Zorro\Data\Z12_9.par ... OK
+  Copy File: D:\Zorro\Data\Z7.fac ... OK
+  Copy File: D:\Zorro\Data\Z7.par ... OK
+  Copy File: D:\Zorro\Data\Z7_1.par ... OK
+  Copy File: D:\Zorro\Data\Z7_10.par ... OK
+  Copy File: D:\Zorro\Data\Z7_10_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_11.par ... OK
+  Copy File: D:\Zorro\Data\Z7_11_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_12.par ... OK
+  Copy File: D:\Zorro\Data\Z7_12_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_13.par ... OK
+  Copy File: D:\Zorro\Data\Z7_13_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_14.par ... OK
+  Copy File: D:\Zorro\Data\Z7_14_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_15.par ... OK
+  Copy File: D:\Zorro\Data\Z7_15_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_16.par ... OK
+  Copy File: D:\Zorro\Data\Z7_16_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_17.par ... OK
+  Copy File: D:\Zorro\Data\Z7_17_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_18.par ... OK
+  Copy File: D:\Zorro\Data\Z7_18_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_19.par ... OK
+  Copy File: D:\Zorro\Data\Z7_19_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_1_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_2.par ... OK
+  Copy File: D:\Zorro\Data\Z7_20.par ... OK
+  Copy File: D:\Zorro\Data\Z7_20_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_21.par ... OK
+  Copy File: D:\Zorro\Data\Z7_21_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_22.par ... OK
+  Copy File: D:\Zorro\Data\Z7_22_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_23.par ... OK
+  Copy File: D:\Zorro\Data\Z7_23_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_24.par ... OK
+  Copy File: D:\Zorro\Data\Z7_24_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_25.par ... OK
+  Copy File: D:\Zorro\Data\Z7_25_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_26.par ... OK
+  Copy File: D:\Zorro\Data\Z7_26_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_27.par ... OK
+  Copy File: D:\Zorro\Data\Z7_27_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_28.par ... OK
+  Copy File: D:\Zorro\Data\Z7_28_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_29.par ... OK
+  Copy File: D:\Zorro\Data\Z7_29_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_2_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_3.par ... OK
+  Copy File: D:\Zorro\Data\Z7_30.par ... OK
+  Copy File: D:\Zorro\Data\Z7_30_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_31.par ... OK
+  Copy File: D:\Zorro\Data\Z7_31_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_32.par ... OK
+  Copy File: D:\Zorro\Data\Z7_32_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_33.par ... OK
+  Copy File: D:\Zorro\Data\Z7_33_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_3_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_4.par ... OK
+  Copy File: D:\Zorro\Data\Z7_4_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_5.par ... OK
+  Copy File: D:\Zorro\Data\Z7_5_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_6.par ... OK
+  Copy File: D:\Zorro\Data\Z7_6_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_7.par ... OK
+  Copy File: D:\Zorro\Data\Z7_7_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_8.par ... OK
+  Copy File: D:\Zorro\Data\Z7_8_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_9.par ... OK
+  Copy File: D:\Zorro\Data\Z7_9_ml.c ... OK
+  Copy File: D:\Zorro\Data\Z7_ml.c ... OK
+
+Start Copy Directory
+  (D:\Zorro\include)
+  Copy File: D:\Zorro\include\com.h ... OK
+  Copy File: D:\Zorro\include\contract.c ... OK
+  Copy File: D:\Zorro\include\d3d9.h ... OK
+  Copy File: D:\Zorro\include\default.c ... OK
+  Copy File: D:\Zorro\include\empty.h ... OK
+  Copy File: D:\Zorro\include\functions.h ... OK
+  Copy File: D:\Zorro\include\func_list.h ... OK
+  Copy File: D:\Zorro\include\legacy.h ... OK
+  Copy File: D:\Zorro\include\litec.h ... OK
+  Copy File: D:\Zorro\include\opengl.h ... OK
+  Copy File: D:\Zorro\include\profile.c ... OK
+  Copy File: D:\Zorro\include\r.h ... OK
+  Copy File: D:\Zorro\include\stdio.h ... OK
+  Copy File: D:\Zorro\include\trading.h ... OK
+  Copy File: D:\Zorro\include\variables.h ... OK
+  Copy File: D:\Zorro\include\windows.h ... OK
+  Copy File: D:\Zorro\include\zorro.h ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++)
+  Copy File: D:\Zorro\Notepad++\change.log ... OK
+  Copy File: D:\Zorro\Notepad++\contextMenu.xml ... OK
+  Copy File: D:\Zorro\Notepad++\doLocalConf.xml ... OK
+  Copy File: D:\Zorro\Notepad++\langs.model.xml ... OK
+  Copy File: D:\Zorro\Notepad++\langs.xml ... OK
+  Copy File: D:\Zorro\Notepad++\license.txt ... OK
+  Copy File: D:\Zorro\Notepad++\notepad++.exe ... OK
+  Copy File: D:\Zorro\Notepad++\nppLogNulContentCorruptionIssue.xml ... OK
+  Copy File: D:\Zorro\Notepad++\readme.txt ... OK
+  Copy File: D:\Zorro\Notepad++\shortcuts.xml ... OK
+  Copy File: D:\Zorro\Notepad++\stylers.model.xml ... OK
+  Copy File: D:\Zorro\Notepad++\stylers.xml ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\autoCompletion)
+  Copy File: D:\Zorro\Notepad++\autoCompletion\actionscript.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\autoit.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\BaanC.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\batch.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\c.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\cmake.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\cobol.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\coffee.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\cpp.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\cs.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\css.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\html.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\java.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\javascript.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\lisp.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\lua.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\nsis.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\perl.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\php.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\python.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\rc.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\sql.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\tex.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\typescript.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\vb.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\vhdl.xml ... OK
+  Copy File: D:\Zorro\Notepad++\autoCompletion\xml.xml ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\functionList)
+  Copy File: D:\Zorro\Notepad++\functionList\ada.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\asm.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\autoit.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\baanc.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\bash.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\batch.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\c.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\cobol-free.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\cobol.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\cpp.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\cs.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\fortran.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\fortran77.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\haskell.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\ini.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\inno.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\java.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\javascript.js.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\krl.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\lua.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\nsis.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\overrideMap.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\perl.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\php.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\powershell.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\python.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\ruby.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\rust.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\sinumerik.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\sql.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\typescript.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\universe_basic.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\vhdl.xml ... OK
+  Copy File: D:\Zorro\Notepad++\functionList\xml.xml ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\localization)
+  Copy File: D:\Zorro\Notepad++\localization\abkhazian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\afrikaans.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\albanian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\arabic.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\aragonese.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\aranese.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\azerbaijani.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\basque.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\belarusian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\bengali.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\bosnian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\brazilian_portuguese.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\breton.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\bulgarian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\catalan.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\chinese.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\chineseSimplified.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\corsican.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\croatian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\czech.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\danish.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\dutch.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\english.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\english_customizable.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\esperanto.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\estonian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\extremaduran.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\farsi.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\finnish.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\french.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\friulian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\galician.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\georgian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\german.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\greek.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\gujarati.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\hebrew.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\hindi.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\hongKongCantonese.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\hungarian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\indonesian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\irish.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\italian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\japanese.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\kabyle.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\kannada.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\kazakh.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\korean.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\kurdish.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\kyrgyz.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\latvian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\ligurian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\lithuanian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\luxembourgish.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\macedonian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\malay.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\marathi.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\mongolian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\nepali.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\norwegian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\nynorsk.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\occitan.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\piglatin.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\polish.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\portuguese.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\punjabi.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\romanian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\russian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\samogitian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\sardinian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\serbian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\serbianCyrillic.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\sinhala.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\slovak.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\slovenian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\spanish.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\spanish_ar.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\swedish.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\tagalog.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\taiwaneseMandarin.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\tajikCyrillic.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\tamil.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\tatar.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\telugu.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\thai.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\turkish.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\ukrainian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\urdu.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\uyghur.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\uzbek.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\uzbekCyrillic.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\venetian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\vietnamese.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\welsh.xml ... OK
+  Copy File: D:\Zorro\Notepad++\localization\zulu.xml ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\plugins\Config)
+  Copy File: D:\Zorro\Notepad++\plugins\Config\converter.ini ... OK
+  Copy File: D:\Zorro\Notepad++\plugins\Config\CustomizeToolbar.btn ... OK
+  Copy File: D:\Zorro\Notepad++\plugins\Config\CustomizeToolbar.btn.new ... OK
+  Copy File: D:\Zorro\Notepad++\plugins\Config\CustomizeToolbar.dat ... OK
+  Copy File: D:\Zorro\Notepad++\plugins\Config\LanguageHelp.ini ... OK
+  Copy File: D:\Zorro\Notepad++\plugins\Config\nppPluginList.dll ... OK
+  Copy File: D:\Zorro\Notepad++\plugins\Config\zorro16.bmp ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\plugins\LanguageHelp)
+  Copy File: D:\Zorro\Notepad++\plugins\LanguageHelp\install.txt ... OK
+  Copy File: D:\Zorro\Notepad++\plugins\LanguageHelp\LanguageHelp.dll ... OK
+  Copy File: D:\Zorro\Notepad++\plugins\LanguageHelp\license.txt ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\plugins\mimeTools)
+  Copy File: D:\Zorro\Notepad++\plugins\mimeTools\mimeTools.dll ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\plugins\NppConverter)
+  Copy File: D:\Zorro\Notepad++\plugins\NppConverter\NppConverter.dll ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\plugins\NppExport)
+  Copy File: D:\Zorro\Notepad++\plugins\NppExport\NppExport.dll ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\plugins\VisualStudioLineCopy)
+  Copy File: D:\Zorro\Notepad++\plugins\VisualStudioLineCopy\VisualStudioLineCopy.dll ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\plugins\_CustomizeToolbar)
+  Copy File: D:\Zorro\Notepad++\plugins\_CustomizeToolbar\_CustomizeToolbar.dll ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\themes)
+  Copy File: D:\Zorro\Notepad++\themes\Bespin.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Black board.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Choco.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\DansLeRuSH-Dark.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\DarkModeDefault.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Deep Black.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Hello Kitty.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\HotFudgeSundae.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\khaki.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Mono Industrial.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Monokai.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\MossyLawn.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Navajo.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Obsidian.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Plastic Code Wrap.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Ruby Blue.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Solarized-light.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Solarized.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Twilight.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Vibrant Ink.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\vim Dark Blue.xml ... OK
+  Copy File: D:\Zorro\Notepad++\themes\Zenburn.xml ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\updater)
+  Copy File: D:\Zorro\Notepad++\updater\GUP.exe ... OK
+  Copy File: D:\Zorro\Notepad++\updater\gup.xml ... OK
+  Copy File: D:\Zorro\Notepad++\updater\libcurl.dll ... OK
+  Copy File: D:\Zorro\Notepad++\updater\LICENSE ... OK
+  Copy File: D:\Zorro\Notepad++\updater\README.md ... OK
+  Copy File: D:\Zorro\Notepad++\updater\updater.ico ... OK
+
+Start Copy Directory
+  (D:\Zorro\Notepad++\userDefineLangs)
+  Copy File: D:\Zorro\Notepad++\userDefineLangs\markdown._preinstalled.udl.xml ... OK
+  Copy File: D:\Zorro\Notepad++\userDefineLangs\markdown._preinstalled_DM.udl.xml ... OK
+
+Start Copy Directory
+  (D:\Zorro\Plugin)
+  Copy File: D:\Zorro\Plugin\AllyInvest.dll ... OK
+  Copy File: D:\Zorro\Plugin\Binance.dll ... OK
+  Copy File: D:\Zorro\Plugin\BinanceFutures.dll ... OK
+  Copy File: D:\Zorro\Plugin\BinanceUS.dll ... OK
+  Copy File: D:\Zorro\Plugin\Bitfinex.dll ... OK
+  Copy File: D:\Zorro\Plugin\Bittrex.dll ... OK
+  Copy File: D:\Zorro\Plugin\CoinbasePro.dll ... OK
+  Copy File: D:\Zorro\Plugin\Coinigy.dll ... OK
+  Copy File: D:\Zorro\Plugin\Deribit.dll ... OK
+  Copy File: D:\Zorro\Plugin\Finvasia.dll ... OK
+  Copy File: D:\Zorro\Plugin\FXCM.dll ... OK
+  Copy File: D:\Zorro\Plugin\IB.dll ... OK
+  Copy File: D:\Zorro\Plugin\IEX.dll ... OK
+  Copy File: D:\Zorro\Plugin\IQFeed.dll ... OK
+  Copy File: D:\Zorro\Plugin\Kraken.dll ... OK
+  Copy File: D:\Zorro\Plugin\NxCore.dll ... OK
+  Copy File: D:\Zorro\Plugin\Oanda.dll ... OK
+  Copy File: D:\Zorro\Plugin\Offline.dll ... OK
+  Copy File: D:\Zorro\Plugin\TradeStation.dll ... OK
+  Copy File: D:\Zorro\Plugin\Tradier.dll ... OK
+  Copy File: D:\Zorro\Plugin\ZorroMT4.dll ... OK
+
+Start Copy Directory
+  (D:\Zorro\Plugin64)
+  Copy File: D:\Zorro\Plugin64\Offline.dll ... OK
+  Copy File: D:\Zorro\Plugin64\ZorroMT4.dll ... OK
+
+Start Copy Directory
+  (D:\Zorro\Source)
+  Copy File: D:\Zorro\Source\BittrexPlugin.zip ... OK
+  Copy File: D:\Zorro\Source\debug.htm ... OK
+  Copy File: D:\Zorro\Source\favicon.ico ... OK
+  Copy File: D:\Zorro\Source\indicators.c ... OK
+  Copy File: D:\Zorro\Source\jsmn.zip ... OK
+  Copy File: D:\Zorro\Source\licenses.txt ... OK
+  Copy File: D:\Zorro\Source\mt4R-1.3.0.27.zip ... OK
+  Copy File: D:\Zorro\Source\SimulationPlugin.zip ... OK
+  Copy File: D:\Zorro\Source\status.htm ... OK
+  Copy File: D:\Zorro\Source\ta_lib.zip ... OK
+  Copy File: D:\Zorro\Source\Template.c ... OK
+  Copy File: D:\Zorro\Source\train.htm ... OK
+  Copy File: D:\Zorro\Source\zorro.css ... OK
+
+Start Copy Directory
+  (D:\Zorro\Source\VC++)
+  Copy File: D:\Zorro\Source\VC++\compile.bat ... OK
+  Copy File: D:\Zorro\Source\VC++\compile64.bat ... OK
+  Copy File: D:\Zorro\Source\VC++\rules.bat ... OK
+  Copy File: D:\Zorro\Source\VC++\rules64.bat ... OK
+  Copy File: D:\Zorro\Source\VC++\ZorroDLL.cpp ... OK
+  Copy File: D:\Zorro\Source\VC++\ZorroRules.c ... OK
+
+Start Copy Directory
+  (D:\Zorro\Source\ZorroControl)
+  Copy File: D:\Zorro\Source\ZorroControl\stdafx.cpp ... OK
+  Copy File: D:\Zorro\Source\ZorroControl\stdafx.h ... OK
+  Copy File: D:\Zorro\Source\ZorroControl\ZorroContol.cpp ... OK
+  Copy File: D:\Zorro\Source\ZorroControl\ZorroControl.h ... OK
+
+Start Copy Directory
+  (D:\Zorro\Strategy)
+  Copy File: D:\Zorro\Strategy\Analysis.c ... OK
+  Copy File: D:\Zorro\Strategy\Benchmark+.cpp ... OK
+  Copy File: D:\Zorro\Strategy\Benchmark.c ... OK
+  Copy File: D:\Zorro\Strategy\BrokerArb.c ... OK
+  Copy File: D:\Zorro\Strategy\BuyHold.c ... OK
+  Copy File: D:\Zorro\Strategy\CalculatePi.c ... OK
+  Copy File: D:\Zorro\Strategy\Chart.c ... OK
+  Copy File: D:\Zorro\Strategy\Control.c ... OK
+  Copy File: D:\Zorro\Strategy\CSVfromHistory.c ... OK
+  Copy File: D:\Zorro\Strategy\CSVtoHistory.c ... OK
+  Copy File: D:\Zorro\Strategy\CSVtoOptions.c ... OK
+  Copy File: D:\Zorro\Strategy\CSVtoTicks.c ... OK
+  Copy File: D:\Zorro\Strategy\CurrencyStrength.c ... OK
+  Copy File: D:\Zorro\Strategy\DateCalculator.c ... OK
+  Copy File: D:\Zorro\Strategy\DeepLearn.c ... OK
+  Copy File: D:\Zorro\Strategy\DeepLearn.r ... OK
+  Copy File: D:\Zorro\Strategy\DeepLearnH2O.r ... OK
+  Copy File: D:\Zorro\Strategy\DeepLearnKeras.r ... OK
+  Copy File: D:\Zorro\Strategy\DeepLearnMX.r ... OK
+  Copy File: D:\Zorro\Strategy\Detrend.c ... OK
+  Copy File: D:\Zorro\Strategy\Distribution.c ... OK
+  Copy File: D:\Zorro\Strategy\Download.c ... OK
+  Copy File: D:\Zorro\Strategy\DownloadEOD.c ... OK
+  Copy File: D:\Zorro\Strategy\DTree.c ... OK
+  Copy File: D:\Zorro\Strategy\Ehlers.c ... OK
+  Copy File: D:\Zorro\Strategy\fibo.c ... OK
+  Copy File: D:\Zorro\Strategy\Filter.c ... OK
+  Copy File: D:\Zorro\Strategy\Gap.c ... OK
+  Copy File: D:\Zorro\Strategy\GapFinder.c ... OK
+  Copy File: D:\Zorro\Strategy\Grid.c ... OK
+  Copy File: D:\Zorro\Strategy\History.c ... OK
+  Copy File: D:\Zorro\Strategy\Impulse.c ... OK
+  Copy File: D:\Zorro\Strategy\IndicatorTest.c ... OK
+  Copy File: D:\Zorro\Strategy\InvestCalculator.c ... OK
+  Copy File: D:\Zorro\Strategy\Keystrokes.c ... OK
+  Copy File: D:\Zorro\Strategy\Luxor.c ... OK
+  Copy File: D:\Zorro\Strategy\Mandelbrot.c ... OK
+  Copy File: D:\Zorro\Strategy\Martingale.c ... OK
+  Copy File: D:\Zorro\Strategy\MinWinRate.c ... OK
+  Copy File: D:\Zorro\Strategy\MRC.c ... OK
+  Copy File: D:\Zorro\Strategy\MultiTrain.c ... OK
+  Copy File: D:\Zorro\Strategy\MyStrategy+.cpp ... OK
+  Copy File: D:\Zorro\Strategy\OpenGL.c ... OK
+  Copy File: D:\Zorro\Strategy\OptimizeByScript.c ... OK
+  Copy File: D:\Zorro\Strategy\OptimizeTest.c ... OK
+  Copy File: D:\Zorro\Strategy\OptionsCalculator.c ... OK
+  Copy File: D:\Zorro\Strategy\PanelTest.c ... OK
+  Copy File: D:\Zorro\Strategy\PayOff.c ... OK
+  Copy File: D:\Zorro\Strategy\Perceptron.c ... OK
+  Copy File: D:\Zorro\Strategy\Performance.c ... OK
+  Copy File: D:\Zorro\Strategy\Predict.c ... OK
+  Copy File: D:\Zorro\Strategy\Process.c ... OK
+  Copy File: D:\Zorro\Strategy\PythonTest.c ... OK
+  Copy File: D:\Zorro\Strategy\RandomPrice.c ... OK
+  Copy File: D:\Zorro\Strategy\RandomWalk.c ... OK
+  Copy File: D:\Zorro\Strategy\Reality.c ... OK
+  Copy File: D:\Zorro\Strategy\RecordT1.c ... OK
+  Copy File: D:\Zorro\Strategy\Regime.c ... OK
+  Copy File: D:\Zorro\Strategy\Rotate.c ... OK
+  Copy File: D:\Zorro\Strategy\RTest.c ... OK
+  Copy File: D:\Zorro\Strategy\Sentiment.c ... OK
+  Copy File: D:\Zorro\Strategy\Simulate.c ... OK
+  Copy File: D:\Zorro\Strategy\SpecialBars.c ... OK
+  Copy File: D:\Zorro\Strategy\Spectrum.c ... OK
+  Copy File: D:\Zorro\Strategy\TestPanel2.csv ... OK
+  Copy File: D:\Zorro\Strategy\TradeCosts.c ... OK
+  Copy File: D:\Zorro\Strategy\TradeOptions.c ... OK
+  Copy File: D:\Zorro\Strategy\TradeTest+.cpp ... OK
+  Copy File: D:\Zorro\Strategy\TradeTest.c ... OK
+  Copy File: D:\Zorro\Strategy\Turk2.c ... OK
+  Copy File: D:\Zorro\Strategy\WFOProfile.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop1.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop2.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop3_1.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop3_2.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop4.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop4a.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop5.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop6.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop7.c ... OK
+  Copy File: D:\Zorro\Strategy\Workshop8.c ... OK
+  Copy File: D:\Zorro\Strategy\z.ini ... OK
+  Copy File: D:\Zorro\Strategy\Z1.x ... OK
+  Copy File: D:\Zorro\Strategy\Z10.x ... OK
+  Copy File: D:\Zorro\Strategy\Z12.x ... OK
+  Copy File: D:\Zorro\Strategy\Z13.x ... OK
+  Copy File: D:\Zorro\Strategy\Z2.x ... OK
+  Copy File: D:\Zorro\Strategy\Z7.x ... OK
+  Copy File: D:\Zorro\Strategy\Z8.x ... OK
+  Copy File: D:\Zorro\Strategy\Z9.x ... OK
+  Copy File: D:\Zorro\Strategy\ZStatus.c ... OK
+
+Start Copy Directory
+  (D:\Zorro\Zorro64)
+  Copy File: D:\Zorro\Zorro64\AckUtl64.dll ... OK
+  Copy File: D:\Zorro\Zorro64\chartdir70.dll ... OK
+  Copy File: D:\Zorro\Zorro64\Zorro64.exe ... OK
+
+Start Copy Directory
+  (D:\Zorro\History)
+  Copy File: D:\Zorro\History\EURUSD_2006.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2007.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2008.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2009.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2010.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2011.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2012.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2013.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2014.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2015.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2016.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2017.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2018.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2019.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2020.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2021.t6 ... OK
+  Copy File: D:\Zorro\History\EURUSD_2022.t6 ... OK
+  Copy File: D:\Zorro\History\AccountsExample.csv ... OK
+  Copy File: D:\Zorro\History\AssetsArb.csv ... OK
+  Copy File: D:\Zorro\History\AssetsBinance.csv ... OK
+  Copy File: D:\Zorro\History\AssetsBittrex.csv ... OK
+  Copy File: D:\Zorro\History\AssetsCFD200.csv ... OK
+  Copy File: D:\Zorro\History\AssetsCur.csv ... OK
+  Copy File: D:\Zorro\History\AssetsDarwinex.csv ... OK
+  Copy File: D:\Zorro\History\AssetsFix.csv ... OK
+  Copy File: D:\Zorro\History\AssetsFUT.csv ... OK
+  Copy File: D:\Zorro\History\AssetsFXCM.csv ... OK
+  Copy File: D:\Zorro\History\AssetsGP.csv ... OK
+  Copy File: D:\Zorro\History\AssetsIB.csv ... OK
+  Copy File: D:\Zorro\History\AssetsKraken.csv ... OK
+  Copy File: D:\Zorro\History\AssetsOanda.csv ... OK
+  Copy File: D:\Zorro\History\AssetsOandaEUR.csv ... OK
+  Copy File: D:\Zorro\History\AssetsRussell2000.csv ... OK
+  Copy File: D:\Zorro\History\AssetsSP250.csv ... OK
+  Copy File: D:\Zorro\History\AssetsSP30.csv ... OK
+  Copy File: D:\Zorro\History\AssetsSP50.csv ... OK
+  Copy File: D:\Zorro\History\AssetsZ10.csv ... OK
+  Copy File: D:\Zorro\History\AssetsZ13.csv ... OK
+  Copy File: D:\Zorro\History\AssetsZ8.csv ... OK
+  Copy File: D:\Zorro\History\AssetsZ9.csv ... OK
+  Copy File: D:\Zorro\History\AssetsZ9E.csv ... OK
+
+Execute at: (3) --- After Copy
+Registering Components --- Start
+
+Create Start/Program shortcut:
+  Zorro Project\Zorro  (D:\Zorro\Zorro.exe) ... OK
+Create Start/Program shortcut:
+  Zorro Project\Script Editor  (D:\Zorro\Notepad++\notepad++.exe) ... OK
+Create Start/Program shortcut:
+  Zorro Project\Zorro64  (D:\Zorro\Zorro64\Zorro64.exe) ... OK
+Create Start/Program shortcut:
+  Zorro Project\Uninstall Zorro Project  (D:\Zorro\Zorro_setup_16862.exe) ... OK
+
+Registering Components --- End
+
+Execute at: (23) --- After Reg Components
+Execute at: (19) --- Before Complete
+Show Setup Dialog: Setup Complete
+Execute at: (20) --- After Complete
+Execute at: (4) --- Setup End

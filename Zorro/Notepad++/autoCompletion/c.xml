@@ -1,0 +1,4807 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+	<AutoComplete language="C">
+		<Environment ignoreCase="no" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" />
+		<KeyWord name="#define" />
+		<KeyWord name="#else" />
+		<KeyWord name="#endif" />
+		<KeyWord name="#ifdef" />
+		<KeyWord name="#ifndef" />
+		<KeyWord name="#include" />
+		<KeyWord name="#undef" />
+		<KeyWord name="atof" func="yes">
+			<Overload retVal="var" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="atoi" func="yes">
+			<Overload retVal="int" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="break" />
+		<KeyWord name="bsearch" func="yes">
+			<Overload retVal="void *" >
+				<Param name="void *key" />
+				<Param name="void *base" />
+				<Param name="size_t nmemb" />
+				<Param name="size_t size" />
+				<Param name="int (*compar)(void *, void *)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="case" />
+		<KeyWord name="char" />
+		<KeyWord name="chdir" func="yes">
+			<Overload retVal="int" >
+				<Param name="string path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="chmod" func="yes">
+			<Overload retVal="int" >
+				<Param name="string path" />
+				<Param name="mode_t mode" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="const" />
+		<KeyWord name="continue" />
+		<KeyWord name="cos" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cosh" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="div" func="yes">
+			<Overload retVal="div_t" >
+				<Param name="int numer" />
+				<Param name="int denom" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="do" />
+		<KeyWord name="var" />
+		<KeyWord name="vars" />
+		<KeyWord name="else" />
+		<KeyWord name="enum" />
+		<KeyWord name="exp" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fabs" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fclose" func="yes">
+			<Overload retVal="int" >
+				<Param name="File *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fcloseall" />
+		<KeyWord name="fflush" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fgetc" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fgetpos" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+				<Param name="fpos_t *pos" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fgets" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s" />
+				<Param name="int n" />
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="filelength" />
+		<KeyWord name="fileno" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="findfirst" />
+		<KeyWord name="findnext" />
+		<KeyWord name="float" />
+		<KeyWord name="floor" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="flushall" />
+		<KeyWord name="fmod" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+				<Param name="var y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fopen" func="yes">
+			<Overload retVal="FILE *" >
+				<Param name="string filename" />
+				<Param name="string mode" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="for" />
+		<KeyWord name="fprintf" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+				<Param name="string format" />
+				<Param name="..." />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fputc" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fputs" func="yes">
+			<Overload retVal="int" >
+				<Param name="string s" />
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fread" func="yes">
+			<Overload retVal="size_t" >
+				<Param name="void *ptr" />
+				<Param name="size_t size" />
+				<Param name="size_t nmemb" />
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="free" func="yes">
+			<Overload retVal="void" >
+				<Param name="void *ptr" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="freopen" func="yes">
+			<Overload retVal="FILE *" >
+				<Param name="string filename" />
+				<Param name="string mode" />
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fscanf" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+				<Param name="string format" />
+				<Param name="..." />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fseek" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+				<Param name="long int offset" />
+				<Param name="int whence" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fsetpos" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+				<Param name="fpos_t * pos" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fstat" func="yes">
+			<Overload retVal="int" >
+				<Param name="int filedes" />
+				<Param name="struct stat *buf" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ftell" func="yes">
+			<Overload retVal="long int" >
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fwrite" func="yes">
+			<Overload retVal="size_t" >
+				<Param name="void *ptr" />
+				<Param name="size_t size" />
+				<Param name="size_t nmemb" />
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getc" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getch" />
+		<KeyWord name="getchar" func="yes">
+			<Overload retVal="int" >
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getcwd" func="yes">
+			<Overload retVal="string " >
+				<Param name="string buf" />
+				<Param name="size_t size" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getenv" func="yes">
+			<Overload retVal="string " >
+				<Param name="string name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="gets" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="gmtime" func="yes">
+			<Overload retVal="struct tm *" >
+				<Param name="time_t *timer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="goto" />
+		<KeyWord name="if" />
+		<KeyWord name="int" />
+		<KeyWord name="isalnum" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isalpha" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isascii" />
+		<KeyWord name="iscntrl" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isdigit" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="islower" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isprint" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ispunct" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isspace" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isupper" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isxdigit" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="itoa" />
+		<KeyWord name="kbhit" />
+		<KeyWord name="ldexp" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+				<Param name="int exp" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="localtime" func="yes">
+			<Overload retVal="struct tm *" >
+				<Param name="time_t *timer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="log" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="log10" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="long" />
+		<KeyWord name="malloc" func="yes">
+			<Overload retVal="void*" >
+				<Param name="size_t size" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="memchr" func="yes">
+			<Overload retVal="void *" >
+				<Param name="void *s" />
+				<Param name="int c" />
+				<Param name="size_t n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="memcmp" func="yes">
+			<Overload retVal="int" >
+				<Param name="void *s1" />
+				<Param name="void *s2" />
+				<Param name="size_t n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="memcpy" func="yes">
+			<Overload retVal="void *" >
+				<Param name="void *s1" />
+				<Param name="void *s2" />
+				<Param name="size_t n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="memmove" func="yes">
+			<Overload retVal="void *" >
+				<Param name="void * s1" />
+				<Param name="void *s2" />
+				<Param name="size_t n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="memset" func="yes">
+			<Overload retVal="void *" >
+				<Param name="void *s" />
+				<Param name="int c" />
+				<Param name="size_t n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="min" />
+		<KeyWord name="mkdir" func="yes">
+			<Overload retVal="int" >
+				<Param name="string path" />
+				<Param name="mode_t mode" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mktime" func="yes">
+			<Overload retVal="time_t" >
+				<Param name="struct tm *timer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="pow" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+				<Param name="var y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="printf" func="yes">
+			<Overload retVal="int" >
+				<Param name="string format" />
+				<Param name="..." />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="putc" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="putch" />
+		<KeyWord name="putchar" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="puts" func="yes">
+			<Overload retVal="int" >
+				<Param name="string s" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="qsort" func="yes">
+			<Overload retVal="void" >
+				<Param name="void *base" />
+				<Param name="size_t nmemb" />
+				<Param name="size_t size" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="raise" func="yes">
+			<Overload retVal="int" >
+				<Param name="int sig" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rand" func="yes">
+			<Overload retVal="int" >
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="random" />
+		<KeyWord name="randomize" />
+		<KeyWord name="realloc" func="yes">
+			<Overload retVal="void" >
+				<Param name="void *ptr" />
+				<Param name="size_t size" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="remove" func="yes">
+			<Overload retVal="int" >
+				<Param name="string filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rename" func="yes">
+			<Overload retVal="int" >
+				<Param name="string  old" />
+				<Param name="string new" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="return" />
+		<KeyWord name="rewind" func="yes">
+			<Overload retVal="void" >
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rewinddir" func="yes">
+			<Overload retVal="void" >
+				<Param name="DIR *dirp" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rmdir" func="yes">
+			<Overload retVal="int" >
+				<Param name="string path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="series" />
+		<KeyWord name="short" />
+		<KeyWord name="signed" />
+		<KeyWord name="sin" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sinh" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sizeof" />
+		<KeyWord name="sleep" func="yes">
+			<Overload retVal="unsigned int" >
+				<Param name="unsigned int seconds" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sound" />
+		<KeyWord name="sprintf" func="yes">
+			<Overload retVal="int" >
+				<Param name="string s" />
+				<Param name="string format" />
+				<Param name="..." />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sqrt" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="srand" func="yes">
+			<Overload retVal="void" >
+				<Param name="unsigned int seed" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sscanf" func="yes">
+			<Overload retVal="int" >
+				<Param name="string s" />
+				<Param name="string format" />
+				<Param name="..." />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="stat" func="yes">
+			<Overload retVal="int" >
+				<Param name="string path" />
+				<Param name="struct stat *buf" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="static" />
+		<KeyWord name="strcat" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s1" />
+				<Param name="string s2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strchr" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s" />
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strcmp" func="yes">
+			<Overload retVal="int" >
+				<Param name="string s1" />
+				<Param name="string s2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strcmpi" />
+		<KeyWord name="strcoll" func="yes">
+			<Overload retVal="int" >
+				<Param name="string s1" />
+				<Param name="string s2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strcpy" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s1" />
+				<Param name="string s2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strcspn" func="yes">
+			<Overload retVal="size_t" >
+				<Param name="string s1" />
+				<Param name="string s2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strdup" />
+		<KeyWord name="strerror" func="yes">
+			<Overload retVal="string " >
+				<Param name="int errnum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strftime" func="yes">
+			<Overload retVal="size_t *" >
+				<Param name="string s" />
+				<Param name="size_t maxsize" />
+				<Param name="string format" />
+				<Param name="struct tm *timeptr" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="stricmp" />
+		<KeyWord name="strlen" func="yes">
+			<Overload retVal="size_t" >
+				<Param name="string s" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strlwr" />
+		<KeyWord name="strncat" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s1" />
+				<Param name="string s2" />
+				<Param name="size_t n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strncmp" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s1" />
+				<Param name="string s2" />
+				<Param name="size_t count" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strncmpi" />
+		<KeyWord name="strncpy" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s1" />
+				<Param name="string s2" />
+				<Param name="size_t n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strnicmp" />
+		<KeyWord name="strnset" />
+		<KeyWord name="strpbrk" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s1" />
+				<Param name="string s2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strrchr" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s" />
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strrev" />
+		<KeyWord name="strset" />
+		<KeyWord name="strspn" func="yes">
+			<Overload retVal="size_t" >
+				<Param name="string s1" />
+				<Param name="string s2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strstr" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s1" />
+				<Param name="string s2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strtod" func="yes">
+			<Overload retVal="var" >
+				<Param name="string nptr" />
+				<Param name="string *endptr" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strtok" func="yes">
+			<Overload retVal="string " >
+				<Param name="string s1" />
+				<Param name="string s2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strtol" func="yes">
+			<Overload retVal="long int" >
+				<Param name="string nptr" />
+				<Param name="string *endptr" />
+				<Param name="int base" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="strtoul" func="yes">
+			<Overload retVal="unsigned long int" >
+				<Param name="string nptr" />
+				<Param name="string *endptr" />
+				<Param name="int base" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="struct" />
+		<KeyWord name="strupr" />
+		<KeyWord name="strxfrm" func="yes">
+			<Overload retVal="size_t" >
+				<Param name="string s1" />
+				<Param name="string s2" />
+				<Param name="size_t n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="switch" />
+		<KeyWord name="tan" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tanh" func="yes">
+			<Overload retVal="var" >
+				<Param name="var x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="time" func="yes">
+			<Overload retVal="time_t" >
+				<Param name="time_t *timer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tmpfile" func="yes">
+			<Overload retVal="FILE *" >
+				<Param name="void" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tolower" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toupper" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="typedef" />
+		<KeyWord name="ungetc" func="yes">
+			<Overload retVal="int" >
+				<Param name="int c" />
+				<Param name="FILE *stream" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ungetch" />
+		<KeyWord name="union" />
+		<KeyWord name="unsigned" />
+		<KeyWord name="va_arg" func="yes">
+			<Overload retVal="type" >
+				<Param name="va_list ap" />
+				<Param name="type" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="va_end" func="yes">
+			<Overload retVal="void" >
+				<Param name="va_list ap" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="va_list" />
+		<KeyWord name="va_start" func="yes">
+			<Overload retVal="void" >
+				<Param name="va_list ap" />
+				<Param name="parmN" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vfprintf" func="yes">
+			<Overload retVal="int" >
+				<Param name="FILE *stream" />
+				<Param name="string format" />
+				<Param name="va_list arg" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="void" />
+		<KeyWord name="vprintf" func="yes">
+			<Overload retVal="int" >
+				<Param name="string format" />
+				<Param name="va_list arg" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vscanf" />
+		<KeyWord name="vsprintf" func="yes">
+			<Overload retVal="int" >
+				<Param name="string s" />
+				<Param name="string format" />
+				<Param name="va_list arg" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vsscanf" />
+		<KeyWord name="while" />
+		<KeyWord name="__cdecl" />
+		<KeyWord name="__stdcall" />
+
+    <KeyWord name="abs" func="yes">
+    <Overload retVal=" " >
+      <Param name="int x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="abs" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="break" />
+    <KeyWord name="continue" />
+    <KeyWord name="adviseLong" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Method, var Objective, var Signal0, var Signal1, ..." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="adviseShort" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Method, var  Objective, var Signal0, var Signal1, ..." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PatternCount" />
+    <KeyWord name="PatternRate" />
+    <KeyWord name="neural" func="yes">
+    <Overload retVal=" " >
+      <Param name="int mode, int model, int numSignals, void* Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="algo" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="AlgoVar" />
+    <KeyWord name="AssetVar" />
+    <KeyWord name="AssetStr" />
+    <KeyWord name="PI" func="yes">
+    <Overload retVal=" " >
+      <Param name="var radius" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="asset" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="assetAdd" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name, var Price, var Spread, var RollLong, var RollShort, var PipVal, var PipCost, var MarginCost, var Leverage, var LotAmount, var Commission, string Symbol" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="assetList" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Filename,string Select" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="assetHistory" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name, int Mode" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="assetType" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="AssetFrameZone" />
+    <KeyWord name="AssetMarket" />
+    <KeyWord name="AssetFrame" />
+    <KeyWord name="AssetBar" />
+    <KeyWord name="asin" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="acos" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="atan" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="atan2" func="yes">
+    <Overload retVal=" " >
+      <Param name="var a, var b" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="exp" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="log" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="pow" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x, var y" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sign" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sin" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="cos" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="tan" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sinh" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="cosh" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="tanh" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sqrt" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Balance" />
+    <KeyWord name="Equity" />
+    <KeyWord name="TradeVal" />
+    <KeyWord name="RiskTotal" />
+    <KeyWord name="RiskMax" />
+    <KeyWord name="MarginVal" />
+    <KeyWord name="MarginTotal" />
+    <KeyWord name="MarginMax" />
+    <KeyWord name="bar" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Open, vars High, vars Low, vars Close, vars Price, DATE Start, DATE Time" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="BarPeriod" />
+    <KeyWord name="BarOffset" />
+    <KeyWord name="BarZone" />
+    <KeyWord name="TimeFrame" />
+    <KeyWord name="FrameOffset" />
+    <KeyWord name="between" func="yes">
+    <Overload retVal=" " >
+      <Param name="int x, int lower, int upper" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="between" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x, var lower, var upper" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="brokerCommand" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Command, int Parameter" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="enterLong" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Lots, var Entry, var Stop, var TakeProfit, var Trail, var TrailSlope, var TrailLock, var TrailStep" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="enterShort" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Lots, var Entry, var Stop, var TakeProfit, var Trail, var TrailSlope, var TrailLock, var TrailStep" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="enterLong" func="yes">
+    <Overload retVal=" " >
+      <Param name="function, var v0, ... var v7" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="enterShort" func="yes">
+    <Overload retVal=" " >
+      <Param name="function, var v0, ... var v7" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDL2Crows" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDL3BlackCrows" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDL3Inside" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDL3LineStrike" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDL3Outside" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDL3StarsInSouth" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDL3WhiteSoldiers" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLAbandonedBaby" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Penetration" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLAdvanceBlock" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLBeltHold" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLBreakaway" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLClosingMarubozu" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLConcealBabysWall" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLCounterAttack" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLDarkCloudCover" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Penetration" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLDoji" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLDojiStar" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLDragonflyDoji" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLEngulfing" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLEveningDojiStar" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Penetration" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLEveningStar" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Penetration" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLGapSideSideWhite" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLGravestoneDoji" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLHammer" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLHangingMan" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLHarami" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLHaramiCross" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLHignWave" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLHikkake" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLHikkakeMod" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLHomingPigeon" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLIdentical3Crows" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLInNeck" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLInvertedHammer" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLKicking" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLKickingByLength" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLLadderBottom" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLLongLeggedDoji" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLLongLine" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLMarubozu" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLMatchingLow" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLMatHold" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Penetration" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLMorningDojiStar" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Penetration" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLMorningStar" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Penetration" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLOnNeck" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLPiercing" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLRickshawMan" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLRiseFall3Methods" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLSeperatingLines" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLShootingStar" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLShortLine" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLSpinningTop" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLStalledPattern" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLStickSandwhich" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLTakuri" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLTasukiGap" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLThrusting" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLTristar" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLUnique3River" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLUpsideGap2Crows" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CDLXSideGap3Methods" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ccySet" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Strength" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ccyReset" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ccyStrength" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Currency" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ccyMax" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ccyMin" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="cdf" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="qnorm" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="clamp" func="yes">
+    <Overload retVal=" " >
+      <Param name="int x, int lower, int upper" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="clamp" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x, var lower, var upper" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Command" />
+    <KeyWord name="color" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Value, int color1, int color2, int color3, int color4" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ColorUp" />
+    <KeyWord name="ColorDn" />
+    <KeyWord name="ColorEquity" />
+    <KeyWord name="ColorDD" />
+    <KeyWord name="ColorWin" />
+    <KeyWord name="ColorLoss" />
+    <KeyWord name="ColorBars" />
+    <KeyWord name="ColorPanel" />
+    <KeyWord name="Comparisons" />
+    <KeyWord name="contractUpdate" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name, int Handle, int Mode" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractPrint" func="yes">
+    <Overload retVal=" " >
+      <Param name="CONTRACT* C" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contract" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Type, int Expiry, var Strike" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractDays" func="yes">
+    <Overload retVal=" " >
+      <Param name="CONTRACT*" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractDays" func="yes">
+    <Overload retVal=" " >
+      <Param name="TRADE*" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractPrice" func="yes">
+    <Overload retVal=" " >
+      <Param name="CONTRACT*" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractPrice" func="yes">
+    <Overload retVal=" " >
+      <Param name="TRADE*" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractPosition" func="yes">
+    <Overload retVal=" " >
+      <Param name="TRADE*" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractCheck" func="yes">
+    <Overload retVal=" " >
+      <Param name="TRADE*" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractRoll" func="yes">
+    <Overload retVal=" " >
+      <Param name="TRADE*, int Days, var Strike,  function TMF" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractExercise" func="yes">
+    <Overload retVal=" " >
+      <Param name="TRADE*" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractVal" func="yes">
+    <Overload retVal=" " >
+      <Param name="CONTRACT*, var Price, var HistVol, var Dividend, var RiskFree, var* Delta, var* Gamma, var* Vega, var* Theta, var* Rho" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractIntrinsic" func="yes">
+    <Overload retVal=" " >
+      <Param name="CONTRACT*, var Price" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractProfit" func="yes">
+    <Overload retVal=" " >
+      <Param name="CONTRACT*, var Price, var Premium" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="contractVol" func="yes">
+    <Overload retVal=" " >
+      <Param name="CONTRACT*, var Price, var HistVol, var Value, 
+var Dividend, var RiskFree" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="yield" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="nthDay" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Year, int Month, int Dow, int N" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ContractType" />
+    <KeyWord name="ContractExpiry" />
+    <KeyWord name="ContractAsk" />
+    <KeyWord name="ContractBid" />
+    <KeyWord name="ContractUnl" />
+    <KeyWord name="ContractRow" />
+    <KeyWord name="ContractStrike" />
+    <KeyWord name="ContractVol" />
+    <KeyWord name="ContractVal" />
+    <KeyWord name="ThisContract" />
+    <KeyWord name="Contracts" />
+    <KeyWord name="NumContracts" />
+    <KeyWord name="Multiplier" />
+    <KeyWord name="crossOver" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data1, vars Data2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="crossUnder" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data1, vars Data2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="crossOver" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var border" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="crossUnder" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var border" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataDownload" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Code, int Mode, int Period" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataFromCSV" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, string Format, string Filename, int Column, int Offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataParse" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, string Format, string FileName" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataSort" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataSave" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, string FileName, int Start, int Num" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataSaveCSV" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, string Format, string FileName, int Start, int Num" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataLoad" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, string FileName, int Fields" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataNew" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, int Records, int Fields" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataAppend" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle1, int Handle2, int Start, int Num" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataFind" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, var Date" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataVar" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, int Row, int Column" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataInt" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, int Row, int Column" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataStr" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, int Row, int Column" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataSet" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, int Row, int Column, var Value" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataMerge" func="yes">
+    <Overload retVal="int" >
+      <Param name="int Handle1, int Handle2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataFromQuandl" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle, string Format, string Code, int Column" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="DataSplit" />
+    <KeyWord name="DataSkip" />
+    <KeyWord name="DataSlope" />
+    <KeyWord name="StartDate" />
+    <KeyWord name="EndDate" />
+    <KeyWord name="NumYears" />
+    <KeyWord name="MaxBars" />
+    <KeyWord name="UpdateDays" />
+    <KeyWord name="ReTrainDays" />
+    <KeyWord name="GapDays" />
+    <KeyWord name="StartWeek" />
+    <KeyWord name="EndWeek" />
+    <KeyWord name="StartMarket" />
+    <KeyWord name="EndMarket" />
+    <KeyWord name="Now" func="yes">
+    <Overload retVal=" " >
+      <Param name="default" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dayOpen" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int day" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dayClose" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int day" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dayHigh" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int day" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dayLow" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int day" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dayPivot" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int day" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="#define" />
+    <KeyWord name="#define" />
+    <KeyWord name="#undef" />
+    <KeyWord name="#define" func="yes">
+    <Overload retVal=" " >
+      <Param name="parameter,.." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="#define" />
+    <KeyWord name="#define" />
+    <KeyWord name="#define" />
+    <KeyWord name="frechet" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimeFrame, var Scale, var* Pattern" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Detrend" />
+    <KeyWord name="diff" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="evaluate" func="yes">
+    <Overload retVal=" " >
+      <Param name="PERFORMANCE* perf " />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="file_copy" func="yes">
+    <Overload retVal=" " >
+      <Param name="string dest, string src" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="file_delete" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="file_length" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="file_date" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="file_select" func="yes">
+    <Overload retVal=" " >
+      <Param name="string path, string filter" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="file_content" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="file_read" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name, string content, int length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="file_write" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name, string content, int length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="file_append" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name, string content, int length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Fill" func="yes">
+    <Overload retVal=" " >
+      <Param name="default" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="AGC" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="AGC" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var alpha" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Amplitude" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="BandPass" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, var Delta" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Butterworth" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int CutoffPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="DominantPeriod" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Period" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="DominantPhase" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Period" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="FIR3" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="FIR4" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="FIR6" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HighPass" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int CutoffPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HighPass1" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int CutoffPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HighPass2" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int CutoffPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="LowPass" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int CutoffPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="LowPass" func="yes">
+    <Overload retVal=" " >
+      <Param name="var *Buffer, var Value, int CutoffPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Spectrum" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, int SamplePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="genSine" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Period1, var Period1" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="genSquare" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Period1, var Period2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="genNoise" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="floor" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ceil" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="for" func="yes">
+    <Overload retVal=" " >
+      <Param name="i=0; i<10; i++" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="current_trades" />
+    <KeyWord name="last_trades" />
+    <KeyWord name="open_trades" />
+    <KeyWord name="closed_trades" />
+    <KeyWord name="all_trades" />
+    <KeyWord name="past_trades" />
+    <KeyWord name="used_assets" />
+    <KeyWord name="used_assets" />
+    <KeyWord name="listed_assets" />
+    <KeyWord name="all_algos" />
+   <KeyWord name="break_trades" />
+   <KeyWord name="return_trades" />
+    <KeyWord name="frame" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="frameSync" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Period" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ftp_download" func="yes">
+    <Overload retVal=" " >
+      <Param name="string url, string path, string username, string password" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ftp_upload" func="yes">
+    <Overload retVal=" " >
+      <Param name="string url, string path, string username, string password" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ftp_getdate" func="yes">
+    <Overload retVal=" " >
+      <Param name="string url, string username, string password" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ftp_stop" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ftp_size" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ftp_sent" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ftp_timestamp" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ftp_status" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ftp_log" func="yes">
+    <Overload retVal=" " >
+      <Param name="var mode" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="equalF" func="yes">
+    <Overload retVal=" " >
+      <Param name="var v1, var v2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="aboveF" func="yes">
+    <Overload retVal=" " >
+      <Param name="var val, var border" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="belowF" func="yes">
+    <Overload retVal=" " >
+      <Param name="var val, var border" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="betweenF" func="yes">
+    <Overload retVal=" " >
+      <Param name="var val, var lower, var upper" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="peakF" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="valleyF" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="risingF" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="fallingF" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="crossOverF" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data1, vars Data2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="crossUnderF" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data1, vars Data2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="crossOverF" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var border" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="crossUnderF" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var border" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="andF" func="yes">
+    <Overload retVal=" " >
+      <Param name="var a, var b" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="orF" func="yes">
+    <Overload retVal=" " >
+      <Param name="var a, var b" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="notF" func="yes">
+    <Overload retVal=" " >
+      <Param name="var a, var b" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="fuzzy" func="yes">
+    <Overload retVal=" " >
+      <Param name="var a" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="eq" func="yes">
+    <Overload retVal=" " >
+      <Param name="var v1, var v2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="FuzzyRange" />
+    <KeyWord name="FuzzyLevel" />
+    <KeyWord name="Hedge" />
+    <KeyWord name="http_transfer" func="yes">
+    <Overload retVal=" " >
+      <Param name="string url, string data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="http_request" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Url,string Data,string Header,string Method" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="http_post" func="yes">
+    <Overload retVal=" " >
+      <Param name="string url, string data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="http_proxy" func="yes">
+    <Overload retVal=" " >
+      <Param name="string proxy, int port" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="http_status" func="yes">
+    <Overload retVal=" " >
+      <Param name="int id" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="http_result" func="yes">
+    <Overload retVal=" " >
+      <Param name="int id, string content, long size" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="http_free" func="yes">
+    <Overload retVal=" " >
+      <Param name="int id" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="else" />
+    <KeyWord name="#ifdef" />
+    <KeyWord name="#ifndef" />
+    <KeyWord name="#else" />
+    <KeyWord name="#endif" />
+    <KeyWord name="ifelse" func="yes">
+    <Overload retVal=" " >
+      <Param name="bool c, var x, var y" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ifelse" func="yes">
+    <Overload retVal=" " >
+      <Param name="bool c, string x, string y" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="#include" />
+    <KeyWord name="is" func="yes">
+    <Overload retVal=" " >
+      <Param name="int flag" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="TESTMODE" />
+    <KeyWord name="TRAINMODE" />
+    <KeyWord name="TRADEMODE" />
+    <KeyWord name="DEMO" />
+    <KeyWord name="SPONSORED" />
+    <KeyWord name="CHANGED" />
+    <KeyWord name="AFFIRMED" />
+    <KeyWord name="INITRUN" />
+    <KeyWord name="FIRSTRUN" />
+    <KeyWord name="FIRSTINITRUN" />
+    <KeyWord name="EXITRUN" />
+    <KeyWord name="RUNNING" />
+    <KeyWord name="BUSY" />
+    <KeyWord name="TRADING" />
+    <KeyWord name="LOOKBACK" />
+    <KeyWord name="NEWDAY" />
+    <KeyWord name="FACTORS" />
+    <KeyWord name="RULES" />
+    <KeyWord name="COMMAND" />
+    <KeyWord name="COMPILED" />
+    <KeyWord name="EXE" />
+    <KeyWord name="PORTFOLIO" />
+    <KeyWord name="ASSETS" />
+    <KeyWord name="SELECTED" />
+    <KeyWord name="PLOTSTATS" />
+    <KeyWord name="Train" />
+    <KeyWord name="ReTrain" />
+    <KeyWord name="ReTest" />
+    <KeyWord name="OptimalF" />
+    <KeyWord name="OptimalFLong" />
+    <KeyWord name="OptimalFShort" />
+    <KeyWord name="OptimalFRatio" />
+    <KeyWord name="saveStatus" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="loadStatus" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="lock" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="unlock" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="login" func="yes">
+    <Overload retVal=" " >
+      <Param name="int mode" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="LookBack" />
+    <KeyWord name="UnstablePeriod" />
+    <KeyWord name="TradesPerBar" />
+    <KeyWord name="MinutesPerDay" />
+    <KeyWord name="loop" func="yes">
+    <Overload retVal="string p" >
+      <Param name="string p1,string p2, ... " />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="of" func="yes">
+    <Overload retVal="string p" >
+      <Param name="string p1,string p2, ... " />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Lots" />
+    <KeyWord name="Margin" />
+    <KeyWord name="Risk" />
+    <KeyWord name="Capital" />
+    <KeyWord name="MaxLong" />
+    <KeyWord name="MaxShort" />
+    <KeyWord name="markowitz" func="yes">
+    <Overload retVal=" " >
+      <Param name="var* Covariances, var* Means, int N, var* Caps" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="markowitzReturn" func="yes">
+    <Overload retVal=" " >
+      <Param name="var* Weights, var Variance" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="markowitzVariance" func="yes">
+    <Overload retVal=" " >
+      <Param name="var* Weights, var Return" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="matrix" func="yes">
+    <Overload retVal=" " >
+      <Param name="int rows, int cols" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="me" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat X, int row, int col" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ve" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat V, int n" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="matSet" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat X, mat A" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="matSet" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat X, int row, int col, mat A" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="matSet" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat X, var c" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="matTrans" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat X, mat A" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="matAdd" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat X, mat A, mat B" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="matSub" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat X, mat A, mat B" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="matMul" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat X, mat A, mat B" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="matScale" func="yes">
+    <Overload retVal=" " >
+      <Param name="mat X, var c" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="memory" func="yes">
+    <Overload retVal=" " >
+      <Param name="int mode" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="min" func="yes">
+    <Overload retVal=" " >
+      <Param name="int x, int y" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="min" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x, var y" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="max" func="yes">
+    <Overload retVal=" " >
+      <Param name="int x, int y" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="max" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x, var y" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="set" func="yes">
+    <Overload retVal=" " >
+      <Param name="int flag" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="SKIP1" />
+    <KeyWord name="SKIP2" />
+    <KeyWord name="SKIP3" />
+    <KeyWord name="PEEK" />
+    <KeyWord name="OPENEND" />
+    <KeyWord name="ALLCYCLES" />
+    <KeyWord name="TICKS" />
+    <KeyWord name="FAST" />
+    <KeyWord name="LEAN" />
+    <KeyWord name="LEANER" />
+    <KeyWord name="RECALCULATE" />
+    <KeyWord name="PRELOAD" />
+    <KeyWord name="NOLOCK" />
+    <KeyWord name="STEPWISE" />
+    <KeyWord name="PARAMETERS" />
+    <KeyWord name="FACTORS" />
+    <KeyWord name="RULES" />
+    <KeyWord name="MARGINLIMIT" />
+    <KeyWord name="RISKLIMIT" />
+    <KeyWord name="ACCUMULATE" />
+    <KeyWord name="BINARY" />
+    <KeyWord name="NFA" />
+    <KeyWord name="EXE" />
+    <KeyWord name="LOGFILE" />
+    <KeyWord name="BALANCE" />
+    <KeyWord name="TESTNOW" />
+    <KeyWord name="PLOTNOW" />
+    <KeyWord name="OFF" />
+    <KeyWord name="MonteCarlo" />
+    <KeyWord name="Confidence" />
+    <KeyWord name="year" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="month" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="week" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="day" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dom" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="tdm" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="tom" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dow" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ldow" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone,int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="hour" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="lhour" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="minute" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="tod" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ltod" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="tow" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ltow" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="second" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="wdate" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ldate" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone,int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="wdateBar" func="yes">
+    <Overload retVal=" " >
+      <Param name="int n" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="minutesAgo" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="minutesWithin" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="workday" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="market" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dst" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dmy" func="yes">
+    <Overload retVal=" " >
+      <Param name="int YYYYMMDD" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ymd" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Date" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strdate" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Format, int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strdate" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Format, var Date" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="wdatef" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Format, string DateTime" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="timeOffset" func="yes">
+    <Overload retVal=" " >
+      <Param name="int zone, int days, int hour, int minute" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ZorroInit" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ZorroExit" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ZorroRequest" func="yes">
+    <Overload retVal=" " >
+      <Param name="double&amp array[]" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ZorroRespond" func="yes">
+    <Overload retVal=" " >
+      <Param name="int cmd, double&amp array[]" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="center" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Value, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="compress" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Value, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="scale" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Value, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="normalize" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Value, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="zscore" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Value, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="NumBars" />
+    <KeyWord name="Bar" />
+    <KeyWord name="StartBar" />
+    <KeyWord name="Day" />
+    <KeyWord name="NumCores" />
+    <KeyWord name="Core" />
+    <KeyWord name="NumParameters" />
+    <KeyWord name="ParCycle" />
+    <KeyWord name="StepCycle" />
+    <KeyWord name="StepNext" />
+    <KeyWord name="NumSampleCycles" />
+    <KeyWord name="SampleCycle" />
+    <KeyWord name="NumTotalCycles" />
+    <KeyWord name="TotalCycle" />
+    <KeyWord name="NumWFOCycles" />
+    <KeyWord name="WFOPeriod" />
+    <KeyWord name="WFOCycle" />
+    <KeyWord name="WFOBar" />
+    <KeyWord name="SelectWFO" />
+    <KeyWord name="optimize" func="yes">
+    <Overload retVal=" " >
+      <Param name="var start, var min, var max, var step, var bias" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="order" func="yes">
+    <Overload retVal=" " >
+      <Param name="int type" />
+    </Overload>
+   </KeyWord>
+   <KeyWord name="panelFix" func="yes">
+    <Overload retVal="void" >
+      <Param name="int NumRows,int NumCols" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="panelSet" func="yes">
+    <Overload retVal=" " >
+      <Param name="int row, int col, string text, int color, int style, int type" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="panelGet" func="yes">
+    <Overload retVal=" " >
+      <Param name="int row, int col" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="panelSave" func="yes">
+    <Overload retVal=" " >
+      <Param name="string filename" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="panelLoad" func="yes">
+    <Overload retVal=" " >
+      <Param name="string filename" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="panel" func="yes">
+    <Overload retVal=" " >
+      <Param name="int rows, int columns, int color, int size" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="click" func="yes">
+    <Overload retVal=" " >
+      <Param name="int row, int col" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="peak" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="valley" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PIP" func="yes">
+    <Overload retVal=" " >
+      <Param name="pip" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PIPCost" />
+    <KeyWord name="MarginCost" />
+    <KeyWord name="Leverage" />
+    <KeyWord name="LotAmount" />
+    <KeyWord name="HedgeRatio" />
+    <KeyWord name="InitialPrice" />
+    <KeyWord name="AskPrice" />
+    <KeyWord name="plot" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name, var Value, int Type, int Color" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plot" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name, vars Data, int Type, int Color" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotBar" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name, int pos, var Label, var Value, int Type, int Color" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotGraph" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name, var X, var Y, int Type, int Color" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotText" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name, var X, var Y, string Text, int Style, int Color" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotData" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotChart" func="yes">
+    <Overload retVal=" " >
+      <Param name="string FileName" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PlotBars" />
+    <KeyWord name="PlotDate" />
+    <KeyWord name="PlotScale" />
+    <KeyWord name="PlotWidth" />
+    <KeyWord name="PlotHeight1" />
+    <KeyWord name="PlotHeight2" />
+    <KeyWord name="PlotPeriod" />
+    <KeyWord name="PlotMode" />
+    <KeyWord name="polyfit" func="yes">
+    <Overload retVal=" " >
+      <Param name="var* Coeff,vars Data,int Length,int Order,var Weight" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="polynom" func="yes">
+    <Overload retVal=" " >
+      <Param name="var* Noeff,int Offs" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="predict" func="yes">
+    <Overload retVal=" " >
+      <Param name="int type, vars Data, int TimePeriod, var Threshold" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="price" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="priceO" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="priceC" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="priceH" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="priceL" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="priceReal" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="marketVal" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="marketVol" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="priceSet" func="yes">
+    <Overload retVal=" " >
+      <Param name="int offset, var Open, var High, var Low, var Close" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="priceQuote" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Timestamp, var Quote" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="printf" func="yes">
+    <Overload retVal=" " >
+      <Param name="string format, ..." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="print" func="yes">
+    <Overload retVal=" " >
+      <Param name="int to, string format, ..." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="msg" func="yes">
+    <Overload retVal=" " >
+      <Param name="string format, ..." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotPriceProfile" func="yes">
+    <Overload retVal=" " >
+      <Param name="int bars, int type" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotTradeProfile" func="yes">
+    <Overload retVal=" " >
+      <Param name="int bars" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotMAEGraph" func="yes">
+    <Overload retVal=" " >
+      <Param name="int bars" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotDay" func="yes">
+    <Overload retVal=" " >
+      <Param name="var value, int type" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotWeek" func="yes">
+    <Overload retVal=" " >
+      <Param name="var value, int type" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotMonth" func="yes">
+    <Overload retVal=" " >
+      <Param name="var value, int type" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotYear" func="yes">
+    <Overload retVal=" " >
+      <Param name="var value, int type" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotWFOCycle" func="yes">
+    <Overload retVal=" " >
+      <Param name="var value, int type" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotDayProfit" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotWeekProfit" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotMonthProfit" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotQuarterProfit" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotWFOProfit" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotCorrelogram" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Value, int Lag" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotCorrelogram" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Value1, var Value2, int Lag" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="plotHeatmap" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name,var* Data, int Rows, int Cols" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="progress" func="yes">
+    <Overload retVal=" " >
+      <Param name="int n1, int n2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="putvar" func="yes">
+    <Overload retVal=" " >
+      <Param name="string FileName, string VarName, var Value" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="getvar" func="yes">
+    <Overload retVal=" " >
+      <Param name="string FileName, string VarName" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="quit" func="yes">
+    <Overload retVal=" " >
+      <Param name="string text" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="random" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="random" func="yes">
+    <Overload retVal=" " >
+      <Param name="var max" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="seed" func="yes">
+    <Overload retVal=" " >
+      <Param name="int s" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="randomize" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Method, var *Out, var *In, int Length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Rstart" func="yes">
+    <Overload retVal=" " >
+      <Param name="string source, int debuglevel" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Rrun" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Rx" func="yes">
+    <Overload retVal=" " >
+      <Param name="string code, int mode" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Rset" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name, int n" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Rset" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name, var d" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Rset" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name, var *v, int elements" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Rset" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name, var *m, int rows, int cols" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Ri" func="yes">
+    <Overload retVal=" " >
+      <Param name="string expression" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Rd" func="yes">
+    <Overload retVal=" " >
+      <Param name="string expression" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Rv" func="yes">
+    <Overload retVal=" " >
+      <Param name="string expression, var *v, int elements" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="return" />
+    <KeyWord name="rev" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="shift" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var Value, int Length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="rising" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="falling" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="round" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="roundto" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x, var step" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="run" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="SaveMode" />
+    <KeyWord name="Script" />
+    <KeyWord name="Algo" />
+    <KeyWord name="Asset" />
+    <KeyWord name="SymbolLive" />
+    <KeyWord name="SymbolTrade" />
+    <KeyWord name="SymbolHist" />
+    <KeyWord name="Assets" />
+    <KeyWord name="FactorList" />
+    <KeyWord name="History" />
+    <KeyWord name="Curves" />
+    <KeyWord name="ZorroFolder" />
+    <KeyWord name="WebFolder" />
+    <KeyWord name="Account" />
+    <KeyWord name="Broker" />
+    <KeyWord name="Factors" />
+    <KeyWord name="predictMove" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Length, int Horizon, var Percentile" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="predictSeason" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Length, int Horizon, int Season" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="exitLong" func="yes">
+    <Overload retVal=" " >
+      <Param name="string algo, var price, int lots" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="exitShort" func="yes">
+    <Overload retVal=" " >
+      <Param name="string algo, var price, int lots" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="exitTrade" func="yes">
+    <Overload retVal=" " >
+      <Param name="TRADE*, var price, int lots" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="cancelTrade" func="yes">
+    <Overload retVal=" " >
+      <Param name="int id" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="series" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Value, int Length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sign" func="yes">
+    <Overload retVal=" " >
+      <Param name="int x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sign" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Sleep" func="yes">
+    <Overload retVal=" " >
+      <Param name="int milliseconds" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="wait" func="yes">
+    <Overload retVal=" " >
+      <Param name="int milliseconds" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="slider" func="yes">
+    <Overload retVal=" " >
+      <Param name="int number, int pos, int min, int max, string name, string tooltip" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="slider" func="yes">
+    <Overload retVal=" " >
+      <Param name="int number" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="slider" func="yes">
+    <Overload retVal=" " >
+      <Param name="int number, int pos" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sortData" func="yes">
+    <Overload retVal=" " >
+      <Param name="var* Data, int Length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sortIdx" func="yes">
+    <Overload retVal=" " >
+      <Param name="var* Data, int Length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sound" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Spread" />
+    <KeyWord name="Slippage" />
+    <KeyWord name="Commission" />
+    <KeyWord name="RollShort" />
+    <KeyWord name="RollLong" />
+    <KeyWord name="WinPayout" />
+    <KeyWord name="LossPayout" />
+    <KeyWord name="DrawDownMax" />
+    <KeyWord name="MAE" />
+    <KeyWord name="MarginMax" />
+    <KeyWord name="RiskMax" />
+    <KeyWord name="SpreadCost" />
+    <KeyWord name="SlippageCost" />
+    <KeyWord name="RollCost" />
+    <KeyWord name="CommissionCost" />
+    <KeyWord name="ReturnMean" />
+    <KeyWord name="ReturnStdDev" />
+    <KeyWord name="ReturnUlcer" />
+    <KeyWord name="ReturnR2" />
+    <KeyWord name="DrawDownBars" />
+    <KeyWord name="DrawDownBarsMax" />
+    <KeyWord name="LossStreakMax" />
+    <KeyWord name="NumOpenMax" />
+    <KeyWord name="InMarketBars" />
+    <KeyWord name="InMarketSum" />
+    <KeyWord name="Results" />
+    <KeyWord name="ResultsDaily" />
+    <KeyWord name="statusLong" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="statusShort" func="yes">
+    <Overload retVal=" " >
+      <Param name="string name" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Entry" />
+    <KeyWord name="OrderLimit" />
+    <KeyWord name="Stop" />
+    <KeyWord name="StopFactor" />
+    <KeyWord name="TakeProfit" />
+    <KeyWord name="Trail" />
+    <KeyWord name="TrailSlope" />
+    <KeyWord name="TrailLock" />
+    <KeyWord name="TrailStep" />
+    <KeyWord name="TrailSpeed" />
+    <KeyWord name="sizeof" func="yes">
+    <Overload retVal=" " >
+      <Param name="struct" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strcpy" func="yes">
+    <Overload retVal=" " >
+      <Param name="string dest, string src" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strcat" func="yes">
+    <Overload retVal=" " >
+      <Param name="string dest, string src" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strlen" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strcount" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, char c" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strcmp" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str1, string str2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strstr" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str1, string str2" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strchr" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, int c" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strrchr" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, int c" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strtok" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, string delimiter" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strvar" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, string name, var val" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strtext" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, string name, string default" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strmid" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, int first, int count" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strx" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, string orig, string repl" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strxc" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, char orig, char repl" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strw" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strf" func="yes">
+    <Overload retVal=" " >
+      <Param name="string format, ..." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sprintf" func="yes">
+    <Overload retVal=" " >
+      <Param name="string dest, string format, ..." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="sscanf" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str, string format, ..." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="stridx" func="yes">
+    <Overload retVal="int" >
+      <Param name="string str" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strxid" func="yes">
+    <Overload retVal="string" >
+      <Param name="int Idx" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="atof" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="atoi" func="yes">
+    <Overload retVal=" " >
+      <Param name="string str" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="switch" func="yes">
+    <Overload retVal=" " >
+      <Param name="expression" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="malloc" func="yes">
+    <Overload retVal=" " >
+      <Param name="long size" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="free" func="yes">
+    <Overload retVal=" " >
+      <Param name="void* ptr" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="memcpy" func="yes">
+    <Overload retVal=" " >
+      <Param name="void* dest, void* src, long size" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="memset" func="yes">
+    <Overload retVal=" " >
+      <Param name="void* dest, int c, long size" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="memcmp" func="yes">
+    <Overload retVal="int" >
+      <Param name="void* buffer1, void* buffer1, long size" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="AC" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ADO" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ADX" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ADXR" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Alligator" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ALMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, int Sigma, var Offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ALMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="AO" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="APO" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int FastPeriod, int SlowPeriod, int MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Aroon" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="AroonOsc" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ATR" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ATR" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Open, vars High, vars Low, vars Close, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ATRS" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="AvgPrice" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="BBands" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, var NbDevUp, var NbDevDn, int MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="BBOsc" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, var NbDev, int MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Beta" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, vars Data2, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="BOP" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="verify" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Length, var Depth, int Width, int Horizon" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CCI" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CI" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ChandelierLong" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod, var Multiplier" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ChandelierShort" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod, var Multiplier" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CGOsc" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Chikou" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Shift" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CMO" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Coral" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="DChannel" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="DCOsc" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Decycle" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int CutOffPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="DEMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="DPO" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="DX" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="EMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="EMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var alpha" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="FractalHigh" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="FractalLow" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HAOpen" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HAClose" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HAHigh" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HALow" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HH" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod, int Offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Ichimoku" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Ichimoku" func="yes">
+    <Overload retVal=" " >
+      <Param name="int PeriodTenkan, int PeriodKijun, int PeriodSenkou, int Offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="IBS" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="KAMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Keltner" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, var Factor" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="LL" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod, int Offset" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MACD" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int FastPeriod, int SlowPeriod, int SignalPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MACDExt" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int FastPeriod, int FastMAType, int SlowPeriod, int SlowMAType, int SignalPeriod, int SignalMAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MACDFix" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int SignalPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MAMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var FastLimit, var SlowLimit" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MedPrice" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MidPoint" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MidPrice" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MinusDI" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MinusDI" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Open, vars High, vars Low, vars Close, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MinusDM" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MinusDM" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Open, vars High, vars Low, vars Close, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MMI" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Mom" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MovingAverage" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, int MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MovingAverageVariablePeriod" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, vars Periods, int MinPeriod, int MaxPeriod, int MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="NATR" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="NumWhiteBlack" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Body, int Offset, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PlusDI" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PlusDI" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Open, vars High, vars Low, vars Close, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PlusDM" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PlusDM" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Open, vars High, vars Low, vars Close, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PPO" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int FastPeriod, int SlowPeriod, int MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ProfitFactor" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ROC" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ROCP" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ROCR" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ROCL" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ROCR100" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Roof" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int CutoffLow, int CutoffHigh" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="RSI" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="RVI" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="SAR" func="yes">
+    <Overload retVal=" " >
+      <Param name="var Step, var Min, var Max" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="SIROC" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, int EMAPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="SMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Smooth" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int CutoffPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="SMom" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, int CutoffPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Stoch" func="yes">
+    <Overload retVal=" " >
+      <Param name="int FastK_Period, int SlowK_Period, int SlowK_MAType, int SlowD_Period, int SlowD_MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Stoch" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Open, vars High, vars Low, vars Close, int FastK_Period, int SlowK_Period, int SlowK_MAType, int SlowD_Period, int SlowD_MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="StochEhlers" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, int CutOffLow, int CutOffHigh" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="StochF" func="yes">
+    <Overload retVal=" " >
+      <Param name="int FastK_Period, int FastD_Period, int FastD_MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="StochRSI" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, int FastK_Period, int FastD_Period, int FastD_MAType" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="T3" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, var VFactor" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="TEMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Trima" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Trix" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="TrueRange" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="TSI" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="TypPrice" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="UltOsc" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod1, int TimePeriod2, int TimePeriod3" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="UO" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int CutOff" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Volatility" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="VolatilityC" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod, int EMAPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="VolatilityMM" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, int EMAPeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="VolatilityOV" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Days" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="WCLPrice" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="WillR" func="yes">
+    <Overload retVal=" " >
+      <Param name="int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="WMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ZigZag" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var Depth, int Length, int Color" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ZMA" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="tick" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="tock" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="TickTime" />
+    <KeyWord name="TockTime" />
+    <KeyWord name="TickSmooth" />
+    <KeyWord name="TickFix" />
+    <KeyWord name="Outlier" />
+    <KeyWord name="PriceJump" />
+    <KeyWord name="timer" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="LifeTime" />
+    <KeyWord name="EntryTime" />
+    <KeyWord name="OrderDelay" />
+    <KeyWord name="TradePriceOpen" />
+    <KeyWord name="TradePriceClose" />
+    <KeyWord name="TradeUnits" />
+    <KeyWord name="TradeDir" />
+    <KeyWord name="TradeSpread" />
+    <KeyWord name="TradeRoll" />
+    <KeyWord name="TradeProfit" />
+    <KeyWord name="TradeMarginCost" />
+    <KeyWord name="TradeStrike" />
+    <KeyWord name="TradeUnderlying" />
+    <KeyWord name="TradeMFE" />
+    <KeyWord name="TradeMAE" />
+    <KeyWord name="TradeEntryLimit" />
+    <KeyWord name="TradeStopLimit" />
+    <KeyWord name="TradeStopDiff" />
+    <KeyWord name="TradeProfitLimit" />
+    <KeyWord name="TradeTrailLimit" />
+    <KeyWord name="TradeTrailSlope" />
+    <KeyWord name="TradeTrailStep" />
+    <KeyWord name="TradeTrailLock" />
+    <KeyWord name="TradeVar" />
+    <KeyWord name="TradeLots" />
+    <KeyWord name="TradeLotsTarget" />
+    <KeyWord name="TradeDate" />
+    <KeyWord name="TradeExitDate" />
+    <KeyWord name="TradeLife" />
+    <KeyWord name="TradeBarOpen" />
+    <KeyWord name="TradeBarClose" />
+    <KeyWord name="TradeContract" />
+    <KeyWord name="TradeID" />
+    <KeyWord name="TradeUUID" />
+    <KeyWord name="TradeIsShort" />
+    <KeyWord name="TradeIsLong" />
+    <KeyWord name="TradeIsContract" />
+    <KeyWord name="TradeIsCall" />
+    <KeyWord name="TradeIsPut" />
+    <KeyWord name="TradeIsPhantom" />
+    <KeyWord name="TradeIsPool" />
+    <KeyWord name="TradeIsVirtual" />
+    <KeyWord name="TradeIsPending" />
+    <KeyWord name="TradeIsOpen" />
+    <KeyWord name="TradeIsClosed" />
+    <KeyWord name="TradeIsNewBar" />
+    <KeyWord name="TradeIsEntry" />
+    <KeyWord name="TradeIsStop" />
+    <KeyWord name="TradeIsProfit" />
+    <KeyWord name="TradeAlgo" />
+    <KeyWord name="TradeAsset" />
+    <KeyWord name="ThisTrade" />
+    <KeyWord name="Correlation" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data1, vars Data2, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Covariance" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data1, vars Data2, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Fisher" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="FisherInv" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="FisherN" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="FractalDimension" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Gauss" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HTDcPeriod" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HTDcPhase" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HTPhasor" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HTSine" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HTTrendline" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="HTTrendMode" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Hurst" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Laguerre" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, var alpha" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="LinearReg" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="LinearRegAngle" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="LinearRegIntercept" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="LinearRegSlope" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MaxVal" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MaxIndex" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Median" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MinVal" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MinIndex" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MinMax" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="MinMaxIndex" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Moment" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod, int N" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Normalize" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="NumInRange" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Low, vars High, var Min, var Max, int Length" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="NumRiseFall" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Percentile" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Length, var Percent" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="PercentRank" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Length, var Value" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ShannonGain" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="ShannonEntropy" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int Length, int PatternSize" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Spearman" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="StdDev" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Sum" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="TSF" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Variance" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="Verbose" />
+    <KeyWord name="version" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="watch" func="yes">
+    <Overload retVal=" " >
+      <Param name="string text, ..." />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="BarMode" />
+    <KeyWord name="while" />
+    <KeyWord name="do" />
+    <KeyWord name="WinLong" />
+    <KeyWord name="WinShort" />
+    <KeyWord name="WinTotal" />
+    <KeyWord name="PipsTotal" />
+    <KeyWord name="LossLong" />
+    <KeyWord name="LossShort" />
+    <KeyWord name="LossTotal" />
+    <KeyWord name="WinValLong" />
+    <KeyWord name="WinValShort" />
+    <KeyWord name="WinValTotal" />
+    <KeyWord name="LossValLong" />
+    <KeyWord name="LossValShort" />
+    <KeyWord name="LossValTotal" />
+    <KeyWord name="ProfitClosed" />
+    <KeyWord name="ProfitOpen" />
+    <KeyWord name="ProfitTotal" />
+    <KeyWord name="BalanceLong" />
+    <KeyWord name="BalanceShort" />
+    <KeyWord name="EquityLong" />
+    <KeyWord name="EquityShort" />
+    <KeyWord name="WinMaxLong" />
+    <KeyWord name="WinMaxShort" />
+    <KeyWord name="WinMaxTotal" />
+    <KeyWord name="LossMaxLong" />
+    <KeyWord name="LossMaxShort" />
+    <KeyWord name="LossMaxTotal" />
+    <KeyWord name="NumWinLong" />
+    <KeyWord name="NumWinShort" />
+    <KeyWord name="NumWinTotal" />
+    <KeyWord name="NumLossLong" />
+    <KeyWord name="NumLossShort" />
+    <KeyWord name="NumLossTotal" />
+    <KeyWord name="LossStreakLong" />
+    <KeyWord name="LossStreakShort" />
+    <KeyWord name="LossStreakTotal" />
+    <KeyWord name="WinStreakLong" />
+    <KeyWord name="WinStreakShort" />
+    <KeyWord name="WinStreakTotal" />
+    <KeyWord name="LossStreakValLong" />
+    <KeyWord name="LossStreakValShort" />
+    <KeyWord name="LossStreakValTotal" />
+    <KeyWord name="WinStreakValLong" />
+    <KeyWord name="WinStreakValShort" />
+    <KeyWord name="WinStreakValTotal" />
+    <KeyWord name="NumWinningLong" />
+    <KeyWord name="NumWinningShort" />
+    <KeyWord name="NumLosingLong" />
+    <KeyWord name="NumLosingShort" />
+    <KeyWord name="NumOpenLong" />
+    <KeyWord name="NumOpenShort" />
+    <KeyWord name="NumLongTotal" />
+    <KeyWord name="NumShortTotal" />
+    <KeyWord name="NumOpenTotal" />
+    <KeyWord name="NumOpenPhantom" />
+    <KeyWord name="NumPendingLong" />
+    <KeyWord name="NumPendingShort" />
+    <KeyWord name="NumPendingTotal" />
+    <KeyWord name="NumRejected" />
+    <KeyWord name="LotsPool" />
+    <KeyWord name="LotsVirtual" />
+    <KeyWord name="LotsPhantom" />
+    <KeyWord name="ResultLong" />
+    <KeyWord name="ResultShort" />
+    <KeyWord name="DailyShort" />
+    <KeyWord name="DailyTotal" />
+    <KeyWord name="dnorm" func="yes">
+    <Overload retVal=" " >
+      <Param name="var x,var mu,var sigma" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="TradeMode" />
+    <KeyWord name="TrainMode" />
+    <KeyWord name="strtr" func="yes">
+    <Overload retVal=" " >
+      <Param name="TRADE*" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="strcon" func="yes">
+    <Overload retVal=" " >
+      <Param name="CONTRACT*" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="CBI" func="yes">
+    <Overload retVal=" " >
+      <Param name="double* Data,int Length,int Montecarlo,double Depth,int Width,int Horizon" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="CBIScale" />
+    <KeyWord name="CBIVal" />
+    <KeyWord name="exec" func="yes">
+    <Overload retVal=" " >
+      <Param name="string Program,string Options,int Mode" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="panelMerge" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Row,int Col,int NumRows,int NumCols" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="dataCompress" func="yes">
+    <Overload retVal="int Rows" >
+      <Param name="int Handle,string FileName,int Fields" />
+    </Overload>
+   </KeyWord>
+    <KeyWord name="dataAppendRow" func="yes">
+    <Overload retVal=" " >
+      <Param name="int Handle,int Fields" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="NumUp" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data,int Period,var vThreshold" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="NumDn" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data,int Period,var vThreshold" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="NumTrainCycles" />
+    <KeyWord name="TrainCycle" />
+    <KeyWord name="DataHorizon" />
+    <KeyWord name="COMMONSTART" />
+    <KeyWord name="MAECAPITAL" />
+    <KeyWord name="Amount" />
+    <KeyWord name="SumUp" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data,int Period" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="SumDn" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data,int Period" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="setf" func="yes">
+    <Overload retVal="" >
+      <Param name="int Mode,int Flag" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="resf" func="yes">
+    <Overload retVal="" >
+      <Param name="int Mode,int Flag" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="isf" func="yes">
+    <Overload retVal="int" >
+      <Param name="int Mode,int Flag" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="LogNumber" />
+   <KeyWord name="TradeIsMissed" />
+   <KeyWord name="AssetBox" />
+   <KeyWord name="StopPool" />
+   <KeyWord name="ConnorsRSI" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data,int RSIPeriod,int StreakPeriod,int RankPeriod" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="contractNext" func="yes">
+    <Overload retVal="CONTRACT*" >
+      <Param name="int Type,int Expiry,var Strike" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="contractCPD" func="yes">
+    <Overload retVal="int" >
+      <Param name="int Days" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="cpd" func="yes">
+    <Overload retVal="var" >
+      <Param name="var Value" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="cpdv" func="yes">
+    <Overload retVal="var" >
+      <Param name="var Probability" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="findIdx" func="yes">
+    <Overload retVal="int" >
+      <Param name="var* Data,int Length,var Value" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="filter" func="yes">
+    <Overload retVal="var*" >
+      <Param name="var* Data,int Length,var* Kernel" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="renorm" func="yes">
+    <Overload retVal="var*" >
+      <Param name="var* Data,int Length,var Value" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="suspended" func="yes">
+    <Overload retVal="int" >
+      <Param name="" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="results" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Mode,int Num" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="RSIS" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data,int TimePeriod" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="dataClip" func="yes">
+    <Overload retVal="var" >
+      <Param name="int H,int Rows" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="sftoa" func="yes">
+    <Overload retVal="string" >
+      <Param name="var Value,int Digits" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="distribute" func="yes">
+    <Overload retVal="var" >
+      <Param name="var* Weights,var* Data,int Length,int N,var* Limits" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="orderCVD" func="yes">
+    <Overload retVal="int" >
+      <Param name="T2* Quotes,int N,var Distance" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="sortRank" func="yes">
+    <Overload retVal="void" >
+      <Param name="var* Rank,var* Data,int N" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="utm" func="yes">
+    <Overload retVal="int" >
+      <Param name="var Time" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="file_next" func="yes">
+    <Overload retVal="string" >
+      <Param name="string Filter" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="PlotStart" />
+   <KeyWord name="MaxRequests" />
+   <KeyWord name="HWnd" />
+   <KeyWord name="callback" func="yes">
+    <Overload retVal="void" >
+      <Param name="struct Ptr" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="OrderDuration" />
+   <KeyWord name="contractDelta" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Type,int Days,var Price,var HistVol,var RiskFree,var Strike" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="contractStrike" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Type,int Days,var Price,var HistVol,var RiskFree,var Delta" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="orderUpdate" func="yes">
+    <Overload retVal="int" >
+      <Param name="string Name,int Handle" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="Mode" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data,int TimePeriod,int Steps" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="touch" func="yes">
+    <Overload retVal="bool" >
+      <Param name="vars Data1,vars Data2" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="ndow" func="yes">
+    <Overload retVal="int" >
+      <Param name="int offset" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="dataParseJSON" func="yes">
+    <Overload retVal="int" >
+      <Param name="int Handle,string Format,string Filename" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="modf" func="yes">
+    <Overload retVal="var" >
+      <Param name="var x,var* p" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="contractFind" func="yes">
+    <Overload retVal="CONTRACT*" >
+      <Param name="int Type,int Days,var Find,int N" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="SentimentLW" func="yes">
+    <Overload retVal="var" >
+      <Param name="int TimePeriod" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="SentimentG" func="yes">
+    <Overload retVal="var" >
+      <Param name="int TimePeriod" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="TradeCommission" />
+   <KeyWord name="priceRecord" func="yes">
+    <Overload retVal="int" >
+      <Param name="void" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="file_appendfront" func="yes">
+    <Overload retVal="var" >
+      <Param name="string name,void* content,int size" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="COT" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Handle,string Code,int Field" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="COT_CommercialPos" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Handle,string Code" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="COT_CommercialIndex" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Handle,string Code,int TimePeriod" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="COT_OpenInterest" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Handle,string Code" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="NumAssetsListed" />
+   <KeyWord name="contractRecord" func="yes">
+    <Overload retVal="int" >
+      <Param name="string Name,var MinStrike,var MaxStrike,int MinDays,int MaxDays" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="Centage" />
+   <KeyWord name="Exchange" />
+   <KeyWord name="KAMA2" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data,int ERPeriod,int FastPeriod,int SlowPeriod" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="ER" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="brokerAsset" func="yes">
+    <Overload retVal="var" >
+      <Param name="string Name,var* pPrice,var* pSpread,var *pVol" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="brokerAccount" func="yes">
+    <Overload retVal="var" >
+      <Param name="string Account,string Subaccount,var *pBalance,var *pTradeVal,var *pMarginVal" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="Define" />
+   <KeyWord name="VWAV" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data, vars Weights, int TimePeriod" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="pyStart" func="yes">
+    <Overload retVal="int" >
+      <Param name="string Filename,int Mode" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="pyX" func="yes">
+    <Overload retVal="int" >
+      <Param name="string Code" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="pySet" func="yes">
+    <Overload retVal="int" >
+      <Param name="int / var / var*" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="pyInt" func="yes">
+    <Overload retVal="int" >
+      <Param name="string Name" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="pyVar" func="yes">
+    <Overload retVal="var" >
+      <Param name="string Name" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="pyVec" func="yes">
+    <Overload retVal="int" >
+      <Param name="string Name,var *v,int elements" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="combo" func="yes">
+    <Overload retVal="int" >
+      <Param name="CONTRACT* C1,int N1,CONTRACT* C2,int N2,CONTRACT* C3,int N3,CONTRACT* C4,int N4" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="comboAdd" func="yes">
+    <Overload retVal="int" >
+      <Param name="CONTRACT* C,int N" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="comboLegs" func="yes">
+    <Overload retVal="int" >
+      <Param name="void" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="comboLeg" func="yes">
+    <Overload retVal="int" >
+      <Param name="int Leg" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="comboContract" func="yes">
+    <Overload retVal="CONTRACT*" >
+      <Param name="int Leg" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="comboStrike" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Leg" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="comboPremium" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Sign" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="comboRisk" func="yes">
+    <Overload retVal="var" >
+      <Param name="int Sign" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="email" func="yes">
+    <Overload retVal="int" >
+      <Param name="string To,string From,string Subject,string Body,string Server,string User,string Password" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="NumAssetsUsed" />
+   <KeyWord name="Live" />
+   <KeyWord name="contractSellUnderlying" func="yes">
+    <Overload retVal="int" >
+      <Param name="void" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="Itor" />
+   <KeyWord name="plotHistogram" func="yes">
+    <Overload retVal="" >
+      <Param name="string Name, var Val, var Step, var Weight, int Color" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="require" func="yes">
+    <Overload retVal="int" >
+      <Param name="var Version" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="report" func="yes">
+    <Overload retVal="string" >
+      <Param name="int Mode" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="RET" func="yes">
+    <Overload retVal="var" >
+      <Param name="int TimePeriod" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="Population" />
+   <KeyWord name="Generations" />
+   <KeyWord name="MutationRate" />
+   <KeyWord name="CrossoverRate" />
+   <KeyWord name="PyExit" func="yes">
+    <Overload retVal="void" >
+      <Param name="void" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="conv" func="yes">
+    <Overload retVal="vars" >
+      <Param name="float* fData, int Length" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="R2" func="yes">
+    <Overload retVal="var" >
+      <Param name="vars Data, int Length" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="Interest" />
+   <KeyWord name="contractUnderlying" func="yes">
+    <Overload retVal="var" >
+      <Param name="" />
+    </Overload>   
+   </KeyWord>
+    <KeyWord name="Holidays" />
+   <KeyWord name="zInit" func="yes">
+    <Overload retVal="int" >
+      <Param name="int Num, int Size" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="zOpen" func="yes">
+    <Overload retVal="int" >
+      <Param name="int Id, string Commandline" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="zStatus" func="yes">
+    <Overload retVal="int" >
+      <Param name="int Id" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="zClose" func="yes">
+    <Overload retVal="" >
+      <Param name="int Id" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="zData" func="yes">
+    <Overload retVal="void*" >
+      <Param name="int Id" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="initRQL" func="yes">
+    <Overload retVal="" >
+      <Param name="" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="erf" func="yes">
+    <Overload retVal="var" >
+      <Param name="var x" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="once" func="yes">
+    <Overload retVal="int" >
+      <Param name="BOOL Condition" />
+    </Overload>   
+   </KeyWord>
+   <KeyWord name="Ini" />
+	<KeyWord name="zalloc" func="yes">
+		<Overload retVal="void*" >
+			<Param name="long size" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="mouse" func="yes">
+		<Overload retVal="int" >
+			<Param name="int* x, int* y, HWND hWnd" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="window" func="yes">
+		<Overload retVal="HWND" >
+			<Param name="string Title" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="keys" func="yes">
+		<Overload retVal="void" >
+			<Param name="string Format,..." />
+		</Overload>
+	</KeyWord>
+   <KeyWord name="AccountName" />
+	<KeyWord name="LSMA" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data,int TimePeriod,int Offset" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="QLSMA" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data,int TimePeriod,int Offset" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="slope" func="yes">
+		<Overload retVal="var" >
+			<Param name="int Type,vars Data,int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="line" func="yes">
+		<Overload retVal="var" >
+			<Param name="int Offset" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="Divergence" func="yes">
+		<Overload retVal="int" >
+			<Param name="vars Highs,vars Lows,vars Data,int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="Support" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data,int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="Resistance" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data,int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="Pivot" func="yes">
+		<Overload retVal="var" >
+			<Param name="int TimePeriod,int Offset" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="CDLEngulfing0" func="yes">
+		<Overload retVal="int" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="CDLOutside" func="yes">
+		<Overload retVal="int" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+   <KeyWord name="DayOffset" />
+   <KeyWord name="PlotLabels" />
+   <KeyWord name="TRADES" />
+   <KeyWord name="CURVE" />
+   <KeyWord name="RECIPROCAL" />
+   <KeyWord name="PRICES" />
+   <KeyWord name="INVERT" />
+   <KeyWord name="SHAPE" />
+   <KeyWord name="PEAK" />
+   <KeyWord name="VALLEY" />
+   <KeyWord name="NOPRICE" />
+   <KeyWord name="SHUFFLE" />
+   <KeyWord name="BOOTSTRAP" />
+   <KeyWord name="DETREND" />
+   <KeyWord name="RANDOMWALK" />
+   <KeyWord name="Shape" />
+	<KeyWord name="SemiMoment" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data,int Period,int n" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="Sharpe" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data,int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="Sortino" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data,int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="knapsack" func="yes">
+		<Overload retVal="var" >
+			<Param name="int* Items,var* Prices,var* Values,int N,var Budget,var Cap" />
+		</Overload>
+	</KeyWord>
+   <KeyWord name="ScholzBrake" />
+   <KeyWord name="LossGlobal" />
+	<KeyWord name="comboType" func="yes">
+		<Overload retVal="int" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="comboMargin" func="yes">
+		<Overload retVal="var" >
+			<Param name="int Sign,int AssetType" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="comboProfit" func="yes">
+		<Overload retVal="var" >
+			<Param name="int Price,int Sign" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="contractMargin" func="yes">
+		<Overload retVal="var" >
+			<Param name="CONTRACT*,int AssetType" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="OBV" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data, var Volume" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="invalid" func="yes">
+		<Overload retVal="int" >
+			<Param name="var Value" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="manage" func="yes">
+		<Overload retVal="int" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+   <KeyWord name="Itor1" />
+   <KeyWord name="Itor2" />
+   <KeyWord name="Loop1" />
+   <KeyWord name="Loop2" />
+   <KeyWord name="NumLoops1" />
+   <KeyWord name="NumLoops2" />
+   <KeyWord name="SeriesBuffer" />
+	<KeyWord name="call" func="yes">
+		<Overload retVal="void" >
+			<Param name="(int Mode, void* Function, int P1, var P2)" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="enterTrade" func="yes">
+		<Overload retVal="TRADE*" >
+			<Param name="(TRADE*)" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="ignore" func="yes">
+		<Overload retVal="void" >
+			<Param name="int ErrNum" />
+		</Overload>
+	</KeyWord>
+    <KeyWord name="SMAP" func="yes">
+    <Overload retVal=" " >
+      <Param name="vars Data, int TimePeriod" />
+    </Overload>
+	</KeyWord>
+   <KeyWord name="NOWATCH" />
+    <KeyWord name="error" func="yes">
+    <Overload retVal=" " >
+      <Param name="void" />
+    </Overload>
+	</KeyWord>
+	<KeyWord name="CTI" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data, int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="CCYI" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data, int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="CCYIR" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data, int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="CCYIState" func="yes">
+		<Overload retVal="var" >
+			<Param name="vars Data, int TimePeriod" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="assetSelect" func="yes">
+		<Overload retVal="void" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+   <KeyWord name="Parameters" />
+   <KeyWord name="BestResult" />
+	<KeyWord name="assign" func="yes">
+		<Overload retVal="var" >
+			<Param name="int* Items, var* Costs, var* Weights, int N, var Budget" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="seriesO" func="yes">
+		<Overload retVal="vars" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="seriesH" func="yes">
+		<Overload retVal="vars" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="seriesL" func="yes">
+		<Overload retVal="vars" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="seriesC" func="yes">
+		<Overload retVal="vars" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="brokerTrades" func="yes">
+		<Overload retVal="int" >
+			<Param name="int Method" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="assetSource" func="yes">
+		<Overload retVal="void" >
+			<Param name="string Filename,string URL,string Header,string Body,string Format" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="NOSHIFT" />
+	<KeyWord name="ContractHandle" />
+	<KeyWord name="dataSize" func="yes">
+		<Overload retVal="int" >
+			<Param name="int Handle,int *Rows,int *Cols" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="dataParseString" func="yes">
+		<Overload retVal="int" >
+			<Param name="int Handle,string Format,string Content" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="dataRearrange" func="yes">
+		<Overload retVal="int" >
+			<Param name="int H1,int H2,int RowX,int RowY,int Mode" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="dataCol" func="yes">
+		<Overload retVal="int" >
+			<Param name="int Handle,var* Data,int Col" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="dataChart" func="yes">
+		<Overload retVal="int" >
+			<Param name="int Handle,var* Data,int Col" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="mtu" func="yes">
+		<Overload retVal="var" >
+			<Param name="int UnixTime" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="matSaveCSV" func="yes">
+		<Overload retVal="void" >
+			<Param name="mat M,string Name" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="comboPrint" func="yes">
+		<Overload retVal="void" >
+			<Param name="int To" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="objective" func="yes">
+		<Overload retVal="var" >
+			<Param name="void" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="NOFACTORS" />
+	<KeyWord name="LotLimit" />
+	<KeyWord name="ReturnLR" />
+	<KeyWord name="ReturnCBI" />
+	<KeyWord name="PIPRETURN" />
+	<KeyWord name="ExpiryTime" />
+	<KeyWord name="NumOutliers" />
+	<KeyWord name="LookBackResolution" />
+	<KeyWord name="PriceOffset" />
+	<KeyWord name="AssetMarketZone" />
+	<KeyWord name="AssetMarketStart" />
+	<KeyWord name="AssetMarketEnd" />
+	<KeyWord name="Penalty" />
+	<KeyWord name="AssetPrev" />
+	<KeyWord name="LogTrainRun" />
+	<KeyWord name="at" func="yes">
+		<Overload retVal="int" >
+			<Param name="int HHMM" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="valuewhen" func="yes">
+		<Overload retVal="var" >
+			<Param name="bool Condition,vars Data,int Occurrence" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="barssince" func="yes">
+		<Overload retVal="int" >
+			<Param name="bool Condition" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="ref" func="yes">
+		<Overload retVal="var" >
+			<Param name="var Value" />
+			<Param name="int Index" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="dataRow" func="yes">
+		<Overload retVal="int" >
+			<Param name="int Handle" />
+			<Param name="void* Record" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="LookBackNeeded" />
+	<KeyWord name="DrawDownAtBar" />
+	<KeyWord name="ProfileAtBar" />
+	<KeyWord name="PipsValTotal" />
+	<KeyWord name="pyStr" func="yes">
+		<Overload retVal="string" >
+			<Param name="string Name" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="plotBuyHold" func="yes">
+		<Overload retVal="void" >
+			<Param name="string BenchMark" />
+			<Param name="int Color" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="cum" func="yes">
+		<Overload retVal="var" >
+			<Param name="var Inc" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="fix0" func="yes">
+		<Overload retVal="var" >
+			<Param name="var Val" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="changed" func="yes">
+		<Overload retVal="var" >
+			<Param name="var Val" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="LogZone" />
+	<KeyWord name="SeriesLength" />
+	<KeyWord name="tradeUpdate" func="yes">
+		<Overload retVal="" >
+			<Param name="TRADE*,int NewLots,var NewStop,var NewTP,int NewLifeTime" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="tradeUpdatePool" func="yes">
+		<Overload retVal="" >
+			<Param name="" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="hmac" func="yes">
+		<Overload retVal="string" >
+			<Param name="string Msg,int Length,string Secret,int Mode" />
+		</Overload>
+	</KeyWord>
+	<KeyWord name="brokerRequest" func="yes">
+		<Overload retVal="string" >
+			<Param name="string Path,string Method,string Data" />
+		</Overload>
+	</KeyWord>
+   </AutoComplete>
+</NotepadPlus>

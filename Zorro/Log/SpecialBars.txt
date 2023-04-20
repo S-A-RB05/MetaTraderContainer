@@ -1,0 +1,45 @@
+Test SpecialBars , Zorro 2.539
+
+Simulated account   AssetsFix 
+Bar period          1 min (avg 1 min)
+Total processed     138801 bars
+Test period         2018-06-01..2018-09-02 (92218 bars)
+Lookback period     80 bars (114 minutes)
+Simulation mode     Realistic 
+
+Gross win/loss      69.03$-74.58$, -55.5p, lr -32.34$
+Average profit      -21.80$/year, -1.82$/month, -0.0838$/day
+Max drawdown        -61.63$ -1110.5% (MAE -67.92$ -1223.7%)
+Total down time     90% (TAE 83%)
+Max down time       8 weeks from Jun 2018
+Max open margin     11.74$
+Max open risk       20.15$
+Trade volume        38433$ (150941$/year)
+Transaction costs   -4.95$ spr, -4.07$ slp, -0.85$ rol
+Capital required    197$
+
+Number of trades    33 (130/year, 3/week)
+Percent winning     36.4%
+Max win/loss        19.75$ / -5.55$
+Avg trade profit    -0.17$ -1.7p (+57.5p / -35.5p)
+Avg trade slippage  -0.12$ -1.2p (+1.7p / -2.9p)
+Avg trade bars      2517 (+5604 / -754)
+Max trade bars      18177 (18 days)
+Time in market      90%
+Max open trades     1
+Max loss streak     8 (uncorrelated 9)
+
+Annual return       -11%
+Profit factor       0.93 (PRR 0.54)
+Reward/Risk ratio   -0.1
+Sharpe ratio        -0.27 (Sortino -0.27)
+Kelly criterion     -0.62
+Annualized StdDev   42.88% 
+R2 coefficient      0.000
+Ulcer index         100.0%
+
+Portfolio analysis  OptF  ProF  Win/Loss   Wgt%
+
+EUR/USD             .000  0.93   12/21    100.0  
+EUR/USD:L           .000  0.99    6/10      5.4  
+EUR/USD:S           .000  0.87    6/11     94.6  
