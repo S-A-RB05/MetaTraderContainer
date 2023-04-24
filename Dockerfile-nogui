@@ -10,7 +10,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Install Wine, wget and MetaTrader 5 setup
 RUN dpkg --add-architecture i386 \
     && apt-get update \
-    && apt-get install -y wine32 winbind wget xvfb
+    && apt-get install -y wine32 winbind wget xvfb \
+    chmod +x run_test_nogui.sh
 
 # Set up Xvfb
 ENV DISPLAY=:99
@@ -19,4 +20,4 @@ RUN Xvfb :99 -screen 0 1024x768x16 &
 COPY ["MetaTrader_5_32bit/MetaTrader5", "./"]
 
 # Autorun MetaTrader Terminal.
-# CMD [ "./run_test_nogui.sh" ]
+CMD [ "./run_test_nogui.sh" ]
