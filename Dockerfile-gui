@@ -19,5 +19,5 @@ RUN dpkg --add-architecture i386 \
 COPY ["MetaTrader_5_32bit/MetaTrader5", "./"]
 
 # Autorun MetaTrader Terminal.
-ENTRYPOINT [ "wine" ]
-CMD [ "terminal.exe" ]
+# ENTRYPOINT [ "wine" ]
+# CMD [ "terminal.exe" ]
