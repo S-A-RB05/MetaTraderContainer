@@ -10,14 +10,14 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Set environment variable display to the host machine
 ENV DISPLAY=host.docker.internal:0.0
 
-# Install Wine, wget and MetaTrader 5 setup
-RUN dpkg --add-architecture i386 \
-    && apt-get update \
-    && apt-get install -y wine32 winbind wget \
-    chmod +x run_test_gui.sh
-
 # Copies the install directory from MetaTrader 5 to the docker instead of installing it
 COPY ["MetaTrader_5_32bit/MetaTrader5", "./"]
+
+# Install Wine, wget and MetaTrader 5 setup
+RUN dpkg --add-architecture i386 \
+    && chmod +x ./run_test_gui.sh \
+    && apt-get update \
+    && apt-get install -y wine32 winbind wget
 
 # Autorun MetaTrader Terminal.
 CMD [ "./run_test_gui.sh" ]
