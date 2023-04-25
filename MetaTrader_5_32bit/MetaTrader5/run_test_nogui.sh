@@ -20,3 +20,6 @@ sleep 10
 
 # Stop MetaTrader 5
 pkill -f 'terminal.exe'
+
+# Exit with a status code of 0 to signal success to Kubernetes
+exit 0
