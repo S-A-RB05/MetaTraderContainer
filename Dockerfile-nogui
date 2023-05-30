@@ -13,7 +13,8 @@ COPY ["MetaTrader_5_32bit/MetaTrader5", "./"]
 RUN dpkg --add-architecture i386 \
     && chmod +x ./run_test_nogui.sh \
     && apt-get update \
-    && apt-get install -y wine32 winbind wget xvfb
+    && apt-get install -y wine32 winbind wget xvfb python3-pip \
+    && pip install pika pandas lxml
 
 # Set up Xvfb
 ENV DISPLAY=:99

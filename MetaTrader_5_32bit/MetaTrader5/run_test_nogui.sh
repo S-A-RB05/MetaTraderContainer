@@ -18,6 +18,14 @@ done
 # Wait for an additional 10 seconds to ensure the file is completely written
 sleep 10
 
+# Execute sender.py script
+python3 format_csv.py
+
+sleep 5
+
+# Execute sender.py script
+python3 sender.py
+
 # Stop MetaTrader 5
 pkill -f 'terminal.exe'
 
