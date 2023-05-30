@@ -1,5 +1,8 @@
 # Releases
 
+## V1.3
+rabbitmq implementation it converts report t csv and sends it to queue back with jobid and csv as string with /n seperators.
+
 
 ## V1.2
 Docker has improved way of testing through the use of a script, this means the docker will start grab a basic config file and start the test with the config file, writes the report to the Report folder and closes MT5. This makes it able to be used as a kubernetes job and doesn't require the ```-it``` flag to enter the docker's terminal.  
