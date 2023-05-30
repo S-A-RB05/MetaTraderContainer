@@ -4,7 +4,20 @@
 MT5_EXE="terminal.exe"
 
 # Set the path to the config file for the strategy test
-CONFIG_FILE="Config\testconfig.ini"
+CONFIG_FILE="Config\config.ini"
+
+# RabbitMQ Connection Details
+RABBITMQ_URL="amqps://tnhdeowx:tInXH7wKtKdyn-v97fZ_HGM5XmHsDTNl@rattlesnake.rmq.cloudamqp.com/tnhdeowx"
+QUEUE_NAME="mt5_test"
+
+# Receive message from RabbitMQ
+python3 receive.py $RABBITMQ_URL $QUEUE_NAME Config/config.ini
+
+# Check if the config file exists
+while [ ! -f Config/config.ini ]
+do
+    sleep 10
+done
 
 # Start Metatrader 5 with the specified config file
 xvfb-run wine $MT5_EXE "/config:$CONFIG_FILE" &
