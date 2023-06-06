@@ -5,7 +5,7 @@ rabbitmq implementation it converts report t csv and sends it to queue back with
 
 
 ## V1.2
-Docker has improved way of testing through the use of a script, this means the docker will start grab a basic config file and start the test with the config file, writes the report to the Report folder and closes MT5. This makes it able to be used as a kubernetes job and doesn't require the ```-it``` flag to enter the docker's terminal.  
+Docker has improved way of testing through the use of a script, this includes that the MetaTrader 5 instance will automatically start   the docker will start grab a basic config file and start the test with the config file, writes the report to the Report folder and closes MT5. This makes it able to be used as a kubernetes job and doesn't require the ```-it``` flag to enter the docker's terminal.  
 To start docker ```docker run -it -v "ABSOLUTE WINDOWS PATH TO REPORT DIRECTORY":/MetaTrader/Report ubuntu-mt5-no-gui```
 
 The -v flag will mount the volume you want to receive the reports from. You can change [the script](https://github.com/S-A-RB05/MetaTraderContainer/blob/main/MetaTrader_5_32bit/MetaTrader5/run_test_nogui.sh) to grab the correct config.
