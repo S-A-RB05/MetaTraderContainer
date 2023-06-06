@@ -1,12 +1,23 @@
 # Releases
 
+## Functionalities:
+- Basic Linux docker container
+- Copy MT5 install directory to container
+- Install necessary dependencies to launch MT5 like wine and xvfb (virtual display because MT5 requires output to a display)
+- Basic script to test MT5 and run a test
+- RabbitMQ messaging to retrieve config file
+- RabbitMQ messaging to send results as csv
+- Convert htm file to csv script
+
+
+
 ## V1.3
-rabbitmq implementation it converts report t csv and sends it to queue back with jobid and csv as string with /n seperators.
+Docker has installation of RabbitMQ library using Pyhton hereby it can send and receive messages from the RabbitMQ broker. This is used to receive a config file from the backend for the test, for now it is hardcoded in the script to grab that config file. The script will wait for the report files from the test to be saved then convert them to csv and finally send that csv back as a string using RabbitMQ to the ResultService attached is the jobId where the MT5 docker is running inside the Kubernetes cluster.
 
 
 ## V1.2
-Docker has improved way of testing through the use of a script, this includes that the MetaTrader 5 instance will automatically start   the docker will start grab a basic config file and start the test with the config file, writes the report to the Report folder and closes MT5. This makes it able to be used as a kubernetes job and doesn't require the ```-it``` flag to enter the docker's terminal.  
-To start docker ```docker run -it -v "ABSOLUTE WINDOWS PATH TO REPORT DIRECTORY":/MetaTrader/Report ubuntu-mt5-no-gui```
+Docker has improved way of testing through the use of a script, this includes that the MetaTrader 5 instance will automatically start and grab a basic local config file and start the test with that config file, writes the report to the Report folder and closes MT5. This makes it able to be used as a kubernetes job and doesn't require the ```-it``` flag to enter the docker's terminal.  
+To start docker ```docker run (-it) -v "ABSOLUTE WINDOWS PATH TO REPORT DIRECTORY":/MetaTrader/Report ubuntu-mt5-no-gui```
 
 The -v flag will mount the volume you want to receive the reports from. You can change [the script](https://github.com/S-A-RB05/MetaTraderContainer/blob/main/MetaTrader_5_32bit/MetaTrader5/run_test_nogui.sh) to grab the correct config.
 
